@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" keyPrefix="00T" label="Task" labelPlural="Tasks" layoutable="true" n="Task" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="Task (00T)" updatable="true" urlDetail="https://um5.salesforce.com/{ID}" urlEdit="https://um5.salesforce.com/{ID}/e" urlNew="https://um5.salesforce.com/00T/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Activity ID" type="id" updateable="false"/>
+    <sfField length="18" n="WhoId" relationshipName="Who" t="Name ID" type="reference">
+      <referenceTos>
+        <string>Contact</string>
+        <string>Lead</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="WhatId" relationshipName="What" t="Related To ID" type="reference">
+      <referenceTos>
+        <string>Account</string>
+        <string>Asset</string>
+        <string>AssetRelationship</string>
+        <string>Campaign</string>
+        <string>Case</string>
+        <string>Contract</string>
+        <string>ListEmail</string>
+        <string>Opportunity</string>
+        <string>Order</string>
+        <string>Product2</string>
+        <string>Solution</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="255" n="Subject" nameField="true" type="combobox">
+      <picklistEntryIds>1,2,3,4,5</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Call" s=""/>
+        <sfPLE id="2" n="Email" s=""/>
+        <sfPLE id="3" n="Send Letter" s=""/>
+        <sfPLE id="4" n="Send Quote" s=""/>
+        <sfPLE id="5" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="ActivityDate" t="Due Date Only" type="date"/>
+    <sfField length="40" n="Status" type="picklist">
+      <picklistEntryIds>6,7,8,9,10</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="6" n="Not Started" s=""/>
+        <sfPLE id="7" n="In Progress" s=""/>
+        <sfPLE id="8" n="Completed" s=""/>
+        <sfPLE id="9" n="Waiting on someone else" s=""/>
+        <sfPLE id="10" n="Deferred" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="Priority" type="picklist">
+      <picklistEntryIds>11,12,13</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="11" n="High" s=""/>
+        <sfPLE defaultValue="true" id="12" n="Normal" s=""/>
+        <sfPLE id="13" n="Low" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsHighPriority" t="High Priority" type="_boolean" updateable="false"/>
+    <sfField length="18" n="OwnerId" relationshipName="Owner" t="Assigned To ID" type="reference">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" type="textarea"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="18" n="AccountId" relationshipName="Account" t="Account ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="IsClosed" t="Closed" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsArchived" t="Archived" type="_boolean" updateable="false"/>
+    <sfField digits="8" n="CallDurationInSeconds" t="Call Duration" type="_int"/>
+    <sfField length="40" n="CallType" restrictedPicklist="true" t="Call Type" type="picklist">
+      <picklistEntryIds>14,15,16</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="14" n="Internal" s=""/>
+        <sfPLE id="15" n="Inbound" s=""/>
+        <sfPLE id="16" n="Outbound" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="255" n="CallDisposition" t="Call Result"/>
+    <sfField length="255" n="CallObject" t="Call Object Identifier"/>
+    <sfField n="ReminderDateTime" t="Reminder Date/Time" type="datetime"/>
+    <sfField editPermission="false" n="IsReminderSet" t="Reminder Set" type="_boolean"/>
+    <sfField createable="false" length="18" n="RecurrenceActivityId" t="Recurrence Activity ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Task</string>
+      </referenceTos>
+    </sfField>
+    <sfField editPermission="false" n="IsRecurrence" t="Create Recurring Series of Tasks" type="_boolean" updateable="false"/>
+    <sfField n="RecurrenceStartDateOnly" t="Recurrence Start" type="date"/>
+    <sfField n="RecurrenceEndDateOnly" t="Recurrence End" type="date"/>
+    <sfField length="40" n="RecurrenceTimeZoneSidKey" restrictedPicklist="true" t="Recurrence Time Zone" type="picklist">
+      <picklistEntryIds>17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="17" n="Pacific/Kiritimati" s="" t="(GMT+14:00) Line Is. Time (Pacific/Kiritimati)"/>
+        <sfPLE id="18" n="Pacific/Chatham" s="" t="(GMT+13:45) Chatham Daylight Time (Pacific/Chatham)"/>
+        <sfPLE id="19" n="Pacific/Auckland" s="" t="(GMT+13:00) New Zealand Daylight Time (Pacific/Auckland)"/>
+        <sfPLE id="20" n="Pacific/Enderbury" s="" t="(GMT+13:00) Phoenix Is. Time (Pacific/Enderbury)"/>
+        <sfPLE id="21" n="Pacific/Tongatapu" s="" t="(GMT+13:00) Tonga Time (Pacific/Tongatapu)"/>
+        <sfPLE id="22" n="Asia/Kamchatka" s="" t="(GMT+12:00) Petropavlovsk-Kamchatski Time (Asia/Kamchatka)"/>
+        <sfPLE id="23" n="Pacific/Fiji" s="" t="(GMT+12:00) Fiji Time (Pacific/Fiji)"/>
+        <sfPLE id="24" n="Australia/Lord_Howe" s="" t="(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)"/>
+        <sfPLE id="25" n="Australia/Sydney" s="" t="(GMT+11:00) Australian Eastern Daylight Time (New South Wales) (Australia/Sydney)"/>
+        <sfPLE id="26" n="Pacific/Guadalcanal" s="" t="(GMT+11:00) Solomon Is. Time (Pacific/Guadalcanal)"/>
+        <sfPLE id="27" n="Pacific/Norfolk" s="" t="(GMT+11:00) Norfolk Time (Pacific/Norfolk)"/>
+        <sfPLE id="28" n="Australia/Adelaide" s="" t="(GMT+10:30) Australian Central Daylight Time (South Australia) (Australia/Adelaide)"/>
+        <sfPLE id="29" n="Australia/Brisbane" s="" t="(GMT+10:00) Australian Eastern Standard Time (Queensland) (Australia/Brisbane)"/>
+        <sfPLE id="30" n="Australia/Darwin" s="" t="(GMT+09:30) Australian Central Standard Time (Northern Territory) (Australia/Darwin)"/>
+        <sfPLE id="31" n="Asia/Seoul" s="" t="(GMT+09:00) Korea Standard Time (Asia/Seoul)"/>
+        <sfPLE id="32" n="Asia/Tokyo" s="" t="(GMT+09:00) Japan Standard Time (Asia/Tokyo)"/>
+        <sfPLE id="33" n="Asia/Hong_Kong" s="" t="(GMT+08:00) Hong Kong Time (Asia/Hong_Kong)"/>
+        <sfPLE id="34" n="Asia/Kuala_Lumpur" s="" t="(GMT+08:00) Malaysia Time (Asia/Kuala_Lumpur)"/>
+        <sfPLE id="35" n="Asia/Manila" s="" t="(GMT+08:00) Philippines Time (Asia/Manila)"/>
+        <sfPLE id="36" n="Asia/Shanghai" s="" t="(GMT+08:00) China Standard Time (Asia/Shanghai)"/>
+        <sfPLE id="37" n="Asia/Singapore" s="" t="(GMT+08:00) Singapore Time (Asia/Singapore)"/>
+        <sfPLE id="38" n="Asia/Taipei" s="" t="(GMT+08:00) China Standard Time (Asia/Taipei)"/>
+        <sfPLE id="39" n="Australia/Perth" s="" t="(GMT+08:00) Australian Western Standard Time (Australia/Perth)"/>
+        <sfPLE id="40" n="Asia/Bangkok" s="" t="(GMT+07:00) Indochina Time (Asia/Bangkok)"/>
+        <sfPLE id="41" n="Asia/Ho_Chi_Minh" s="" t="(GMT+07:00) Indochina Time (Asia/Ho_Chi_Minh)"/>
+        <sfPLE id="42" n="Asia/Jakarta" s="" t="(GMT+07:00) West Indonesia Time (Asia/Jakarta)"/>
+        <sfPLE id="43" n="Asia/Rangoon" s="" t="(GMT+06:30) Myanmar Time (Asia/Rangoon)"/>
+        <sfPLE id="44" n="Asia/Dhaka" s="" t="(GMT+06:00) Bangladesh Time (Asia/Dhaka)"/>
+        <sfPLE id="45" n="Asia/Kathmandu" s="" t="(GMT+05:45) Nepal Time (Asia/Kathmandu)"/>
+        <sfPLE id="46" n="Asia/Colombo" s="" t="(GMT+05:30) India Standard Time (Asia/Colombo)"/>
+        <sfPLE id="47" n="Asia/Kolkata" s="" t="(GMT+05:30) India Standard Time (Asia/Kolkata)"/>
+        <sfPLE id="48" n="Asia/Karachi" s="" t="(GMT+05:00) Pakistan Time (Asia/Karachi)"/>
+        <sfPLE id="49" n="Asia/Tashkent" s="" t="(GMT+05:00) Uzbekistan Time (Asia/Tashkent)"/>
+        <sfPLE id="50" n="Asia/Yekaterinburg" s="" t="(GMT+05:00) Yekaterinburg Time (Asia/Yekaterinburg)"/>
+        <sfPLE id="51" n="Asia/Kabul" s="" t="(GMT+04:30) Afghanistan Time (Asia/Kabul)"/>
+        <sfPLE id="52" n="Asia/Baku" s="" t="(GMT+04:00) Azerbaijan Time (Asia/Baku)"/>
+        <sfPLE id="53" n="Asia/Dubai" s="" t="(GMT+04:00) Gulf Standard Time (Asia/Dubai)"/>
+        <sfPLE id="54" n="Asia/Tbilisi" s="" t="(GMT+04:00) Georgia Time (Asia/Tbilisi)"/>
+        <sfPLE id="55" n="Asia/Yerevan" s="" t="(GMT+04:00) Armenia Time (Asia/Yerevan)"/>
+        <sfPLE id="56" n="Asia/Tehran" s="" t="(GMT+03:30) Iran Standard Time (Asia/Tehran)"/>
+        <sfPLE id="57" n="Africa/Nairobi" s="" t="(GMT+03:00) Eastern African Time (Africa/Nairobi)"/>
+        <sfPLE id="58" n="Asia/Baghdad" s="" t="(GMT+03:00) Arabia Standard Time (Asia/Baghdad)"/>
+        <sfPLE id="59" n="Asia/Kuwait" s="" t="(GMT+03:00) Arabia Standard Time (Asia/Kuwait)"/>
+        <sfPLE id="60" n="Asia/Riyadh" s="" t="(GMT+03:00) Arabia Standard Time (Asia/Riyadh)"/>
+        <sfPLE id="61" n="Europe/Istanbul" s="" t="(GMT+03:00) Eastern European Time (Europe/Istanbul)"/>
+        <sfPLE id="62" n="Europe/Minsk" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Minsk)"/>
+        <sfPLE id="63" n="Europe/Moscow" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Moscow)"/>
+        <sfPLE id="64" n="Africa/Cairo" s="" t="(GMT+02:00) Eastern European Time (Africa/Cairo)"/>
+        <sfPLE id="65" n="Africa/Johannesburg" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Johannesburg)"/>
+        <sfPLE id="66" n="Asia/Beirut" s="" t="(GMT+02:00) Eastern European Time (Asia/Beirut)"/>
+        <sfPLE id="67" n="Asia/Jerusalem" s="" t="(GMT+02:00) Israel Standard Time (Asia/Jerusalem)"/>
+        <sfPLE id="68" n="Europe/Athens" s="" t="(GMT+02:00) Eastern European Time (Europe/Athens)"/>
+        <sfPLE id="69" n="Europe/Bucharest" s="" t="(GMT+02:00) Eastern European Time (Europe/Bucharest)"/>
+        <sfPLE id="70" n="Europe/Helsinki" s="" t="(GMT+02:00) Eastern European Time (Europe/Helsinki)"/>
+        <sfPLE id="71" n="Africa/Algiers" s="" t="(GMT+01:00) Central European Time (Africa/Algiers)"/>
+        <sfPLE id="72" n="Africa/Casablanca" s="" t="(GMT+01:00) Western European Time (Africa/Casablanca)"/>
+        <sfPLE id="73" n="Europe/Amsterdam" s="" t="(GMT+01:00) Central European Time (Europe/Amsterdam)"/>
+        <sfPLE id="74" n="Europe/Berlin" s="" t="(GMT+01:00) Central European Time (Europe/Berlin)"/>
+        <sfPLE id="75" n="Europe/Brussels" s="" t="(GMT+01:00) Central European Time (Europe/Brussels)"/>
+        <sfPLE id="76" n="Europe/Paris" s="" t="(GMT+01:00) Central European Time (Europe/Paris)"/>
+        <sfPLE id="77" n="Europe/Prague" s="" t="(GMT+01:00) Central European Time (Europe/Prague)"/>
+        <sfPLE id="78" n="Europe/Rome" s="" t="(GMT+01:00) Central European Time (Europe/Rome)"/>
+        <sfPLE id="79" n="Europe/Dublin" s="" t="(GMT+00:00) Irish Summer Time (Europe/Dublin)"/>
+        <sfPLE id="80" n="Europe/Lisbon" s="" t="(GMT+00:00) Western European Time (Europe/Lisbon)"/>
+        <sfPLE id="81" n="Europe/London" s="" t="(GMT+00:00) Greenwich Mean Time (Europe/London)"/>
+        <sfPLE id="82" n="GMT" s="" t="(GMT+00:00) Greenwich Mean Time (GMT)"/>
+        <sfPLE id="83" n="America/Scoresbysund" s="" t="(GMT-01:00) Eastern Greenland Time (America/Scoresbysund)"/>
+        <sfPLE id="84" n="Atlantic/Azores" s="" t="(GMT-01:00) Azores Time (Atlantic/Azores)"/>
+        <sfPLE id="85" n="Atlantic/Cape_Verde" s="" t="(GMT-01:00) Cape Verde Time (Atlantic/Cape_Verde)"/>
+        <sfPLE id="86" n="Atlantic/South_Georgia" s="" t="(GMT-02:00) South Georgia Standard Time (Atlantic/South_Georgia)"/>
+        <sfPLE id="87" n="America/St_Johns" s="" t="(GMT-02:30) Newfoundland Daylight Time (America/St_Johns)"/>
+        <sfPLE id="88" n="America/Argentina/Buenos_Aires" s="" t="(GMT-03:00) Argentine Time (America/Argentina/Buenos_Aires)"/>
+        <sfPLE id="89" n="America/Halifax" s="" t="(GMT-03:00) Atlantic Daylight Time (America/Halifax)"/>
+        <sfPLE id="90" n="America/Santiago" s="" t="(GMT-03:00) Chile Summer Time (America/Santiago)"/>
+        <sfPLE id="91" n="America/Sao_Paulo" s="" t="(GMT-03:00) Brasilia Time (America/Sao_Paulo)"/>
+        <sfPLE id="92" n="Atlantic/Bermuda" s="" t="(GMT-03:00) Atlantic Daylight Time (Atlantic/Bermuda)"/>
+        <sfPLE id="93" n="America/Caracas" s="" t="(GMT-04:00) Venezuela Time (America/Caracas)"/>
+        <sfPLE id="94" n="America/Indiana/Indianapolis" s="" t="(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)"/>
+        <sfPLE id="95" n="America/New_York" s="" t="(GMT-04:00) Eastern Daylight Time (America/New_York)"/>
+        <sfPLE id="96" n="America/Puerto_Rico" s="" t="(GMT-04:00) Atlantic Standard Time (America/Puerto_Rico)"/>
+        <sfPLE id="97" n="America/Bogota" s="" t="(GMT-05:00) Colombia Time (America/Bogota)"/>
+        <sfPLE id="98" n="America/Chicago" s="" t="(GMT-05:00) Central Daylight Time (America/Chicago)"/>
+        <sfPLE id="99" n="America/Lima" s="" t="(GMT-05:00) Peru Time (America/Lima)"/>
+        <sfPLE id="100" n="America/Panama" s="" t="(GMT-05:00) Eastern Standard Time (America/Panama)"/>
+        <sfPLE id="101" n="America/Denver" s="" t="(GMT-06:00) Mountain Daylight Time (America/Denver)"/>
+        <sfPLE id="102" n="America/El_Salvador" s="" t="(GMT-06:00) Central Standard Time (America/El_Salvador)"/>
+        <sfPLE id="103" n="America/Mexico_City" s="" t="(GMT-06:00) Central Standard Time (America/Mexico_City)"/>
+        <sfPLE id="104" n="America/Los_Angeles" s="" t="(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)"/>
+        <sfPLE id="105" n="America/Mazatlan" s="" t="(GMT-07:00) Mountain Standard Time (America/Mazatlan)"/>
+        <sfPLE id="106" n="America/Phoenix" s="" t="(GMT-07:00) Mountain Standard Time (America/Phoenix)"/>
+        <sfPLE id="107" n="America/Tijuana" s="" t="(GMT-07:00) Pacific Daylight Time (America/Tijuana)"/>
+        <sfPLE id="108" n="America/Anchorage" s="" t="(GMT-08:00) Alaska Daylight Time (America/Anchorage)"/>
+        <sfPLE id="109" n="Pacific/Pitcairn" s="" t="(GMT-08:00) Pitcairn Standard Time (Pacific/Pitcairn)"/>
+        <sfPLE id="110" n="America/Adak" s="" t="(GMT-09:00) Hawaii-Aleutian Daylight Time (America/Adak)"/>
+        <sfPLE id="111" n="Pacific/Gambier" s="" t="(GMT-09:00) Gambier Time (Pacific/Gambier)"/>
+        <sfPLE id="112" n="Pacific/Marquesas" s="" t="(GMT-09:30) Marquesas Time (Pacific/Marquesas)"/>
+        <sfPLE id="113" n="Pacific/Honolulu" s="" t="(GMT-10:00) Hawaii-Aleutian Standard Time (Pacific/Honolulu)"/>
+        <sfPLE id="114" n="Pacific/Niue" s="" t="(GMT-11:00) Niue Time (Pacific/Niue)"/>
+        <sfPLE id="115" n="Pacific/Pago_Pago" s="" t="(GMT-11:00) Samoa Standard Time (Pacific/Pago_Pago)"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="RecurrenceType" restrictedPicklist="true" t="Recurrence Type" type="picklist">
+      <picklistEntryIds>116,117,118,119,120,121,122</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="116" n="RecursDaily" s="" t="Recurs Daily"/>
+        <sfPLE id="117" n="RecursEveryWeekday" s="" t="Recurs Every Weekday"/>
+        <sfPLE id="118" n="RecursMonthly" s="" t="Recurs Monthly"/>
+        <sfPLE id="119" n="RecursMonthlyNth" s="" t="Recurs Monthy Nth"/>
+        <sfPLE id="120" n="RecursWeekly" s="" t="Recurs Weekly"/>
+        <sfPLE id="121" n="RecursYearly" s="" t="Recurs Yearly"/>
+        <sfPLE id="122" n="RecursYearlyNth" s="" t="Recurs Yearly Nth"/>
+      </picklistEntries>
+    </sfField>
+    <sfField digits="9" n="RecurrenceInterval" t="Recurrence Interval" type="_int"/>
+    <sfField digits="9" n="RecurrenceDayOfWeekMask" t="Recurrence Day of Week Mask" type="_int"/>
+    <sfField digits="9" n="RecurrenceDayOfMonth" t="Recurrence Day of Month" type="_int"/>
+    <sfField length="40" n="RecurrenceInstance" restrictedPicklist="true" t="Recurrence Instance" type="picklist">
+      <picklistEntryIds>123,124,125,126,127</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="123" n="First" s="" t="1st"/>
+        <sfPLE id="124" n="Second" s="" t="2nd"/>
+        <sfPLE id="125" n="Third" s="" t="3rd"/>
+        <sfPLE id="126" n="Fourth" s="" t="4th"/>
+        <sfPLE id="127" n="Last" s="" t="last"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="RecurrenceMonthOfYear" restrictedPicklist="true" t="Recurrence Month of Year" type="picklist">
+      <picklistEntryIds>128,129,130,131,132,133,134,135,136,137,138,139</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="128" n="January" s=""/>
+        <sfPLE id="129" n="February" s=""/>
+        <sfPLE id="130" n="March" s=""/>
+        <sfPLE id="131" n="April" s=""/>
+        <sfPLE id="132" n="May" s=""/>
+        <sfPLE id="133" n="June" s=""/>
+        <sfPLE id="134" n="July" s=""/>
+        <sfPLE id="135" n="August" s=""/>
+        <sfPLE id="136" n="September" s=""/>
+        <sfPLE id="137" n="October" s=""/>
+        <sfPLE id="138" n="November" s=""/>
+        <sfPLE id="139" n="December" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="RecurrenceRegeneratedType" restrictedPicklist="true" t="Repeat This Task" type="picklist">
+      <picklistEntryIds>140,141,142</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="140" n="RecurrenceRegenerateAfterDueDate" s="" t="After due date"/>
+        <sfPLE id="141" n="RecurrenceRegenerateAfterToday" s="" t="After date completed"/>
+        <sfPLE id="142" n="RecurrenceRegenerated" s="" t="(Task Closed)"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="TaskSubtype" restrictedPicklist="true" t="Task Subtype" type="picklist" updateable="false">
+      <picklistEntryIds>143,2,144,145,1</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="143" n="Task" s=""/>
+        <sfPLE id="2" n="Email" s=""/>
+        <sfPLE id="144" n="ListEmail" s="" t="List Email"/>
+        <sfPLE id="145" n="Cadence" s=""/>
+        <sfPLE id="1" n="Call" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField filterable="false" n="Email" notVisibleToMetadataUser="true" type="email"/>
+    <sfField filterable="false" n="Phone" notVisibleToMetadataUser="true"/>
+    <sfField editPermission="false" filterable="false" n="Type" notVisibleToMetadataUser="true" readPermission="false" type="picklist"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship childName="Task" field="RecurrenceActivityId" n="RecurringTasks" relationshipName="RecurringTasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="TaskFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="TaskFeed"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink modes="ObjectHome Tasks List RecurringTasks" n="New"/>
+    <sfActionLink modes="View Tasks Activity.Campaign_Call_List__c RecurringTasks" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Tasks Activity.Campaign_Call_List__c RecurringTasks" n="Delete" requiresRow="true" s="3" t="Del"/>
+    <sfActionLink massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View Tasks RecurringTasks" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Tasks RecurringTasks" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="View" n="CancelEdit"/>
+    <sfActionLink n="Close" requiresRow="true" s="3"/>
+    <sfActionLink n="DeleteSeries" s=""/>
+    <sfActionLink n="NewTask" s=""/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink modes="Edit New Clone" n="savenewtask" t="Save and New Task"/>
+    <sfActionLink modes="Edit New Clone" n="savenewevent" t="Save and New Event"/>
+    <sfActionLink modes="View" n="newEvent" t="Create Follow-Up Event"/>
+    <sfActionLink modes="View" n="changeTaskStatus" t="Mark Complete/Reopen"/>
+    <sfActionLink modes="tasks" n="Task.EditDescription" requiresRow="true" s="2" t="Edit Comments"/>
+    <sfActionLink modes="tasks" n="Task.Defer" requiresRow="true" s="2" t="Change Date"/>
+    <sfActionLink modes="tasks" n="FollowupTask" requiresRow="true" s="2" t="Create Follow-Up Task"/>
+    <sfActionLink modes="tasks" n="Task.UpdateStatus" requiresRow="true" s="2" t="Change Status"/>
+    <sfActionLink modes="tasks" n="Task.UpdatePriority" requiresRow="true" s="2" t="Change Priority"/>
+  </standardActions>
+  <homeListColumns>
+    <string>TASK.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>TASK.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>TASK.NAME</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Subject</string>
+    <string>WhoId</string>
+    <string>WhatId</string>
+  </compactLayoutFields>
+  <listViewActions/>
+</sfObject>

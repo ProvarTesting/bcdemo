@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ProfilePlatformFeedback" IsAvailableInAloha="true" Label="Profile Feedback" Name="standard-ProfilePlatformFeedback" SobjectName="ProfilePlatformFeedback" Url="https://um5.salesforce.com/_ui/core/userprofile/UserProfilePage?tab=sfdc.ProfilePlatformFeedback"/>
+</toolingTabInfo>

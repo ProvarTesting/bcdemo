@@ -1,0 +1,15 @@
+[0320/122057.713001:ERROR:file_io.cc(89)] ReadExactly: expected 8, observed 0
+[0320/122057.716515:ERROR:xattr.cc(64)] setxattr org.chromium.crashpad.database.initialized on file /var/folders/cb/yk66cpz173g7cxyc4cs43h8w0000gn/T/: Operation not permitted (1)
+[0320/122103.041921:INFO:CONSOLE(24)] "[object Object]", source: https://um5.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (24)
+[0320/122103.303965:INFO:CONSOLE(615)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: https://um5.lightning.force.com/auraFW/javascript/ygk97W9DQXHlCdwctRS7hA/aura_prod.js (615)
+[0320/122106.006987:INFO:CONSOLE(24)] "[object Object]", source: https://um5.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (24)
+[0320/122112.306033:INFO:CONSOLE(24)] "[object Object]", source: https://um5.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (24)
+[0320/122112.745493:ERROR:web_contents_delegate.cc(196)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0320/122112.745605:ERROR:web_contents_delegate.cc(196)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0320/122132.826401:INFO:CONSOLE(24)] "[object Object]", source: https://um5.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (24)
+[0320/122136.553325:INFO:CONSOLE(2)] "<lightning-icon> Invalid icon name utility:", source: https://um5.lightning.force.com/components/lightning/icon.js (2)
+[0320/122143.818849:INFO:CONSOLE(24)] "[object Object]", source: https://um5.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (24)
+[0320/122145.451058:INFO:CONSOLE(384)] "[object HTMLSpanElement]", source:  (384)
+[0320/122148.468005:INFO:CONSOLE(615)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: https://um5.lightning.force.com/auraFW/javascript/ygk97W9DQXHlCdwctRS7hA/aura_prod.js (615)
+[0320/122149.776380:ERROR:web_contents_delegate.cc(196)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0320/122149.776504:ERROR:web_contents_delegate.cc(196)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.

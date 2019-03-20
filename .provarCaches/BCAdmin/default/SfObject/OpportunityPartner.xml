@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject detailsLoaded="false" editPermission="false" label="Opportunity Partner" labelPlural="Opportunity Partner" n="OpportunityPartner" queryable="true" readPermission="false" retrieveable="true" s="" t="Opportunity Partner">
+  <standardActions>
+    <sfActionLink massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View OpportunityPartnersTo OpportunityPartnersFrom" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View OpportunityPartnersTo OpportunityPartnersFrom" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

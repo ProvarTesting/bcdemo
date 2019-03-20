@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="WorkFeedbackRequest" IsAvailableInAloha="true" Label="Feedback" Name="standard-WorkFeedbackRequest" SobjectName="WorkFeedbackRequest" Url="https://um5.salesforce.com/0WC/o"/>
+</toolingTabInfo>

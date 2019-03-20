@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingTabInfo>
+  <tabDefinition DurableId="ProfilePlatformCoaching" IsAvailableInAloha="true" Label="Profile Coaching" Name="standard-ProfilePlatformCoaching" SobjectName="ProfilePlatformCoaching" Url="https://um5.salesforce.com/_ui/core/userprofile/UserProfilePage?tab=sfdc.ProfilePlatformCoaching"/>
+</toolingTabInfo>

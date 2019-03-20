@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" feedEnabled="true" keyPrefix="005" label="User" labelPlural="Users" layoutable="true" n="User" queryable="true" retrieveable="true" s="" searchLayoutable="true" t="User (005)" updatable="true" urlDetail="https://um5.salesforce.com/{ID}" urlEdit="https://um5.salesforce.com/{ID}/e" urlNew="https://um5.salesforce.com/005/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="User ID" type="id" updateable="false"/>
+    <sfField length="80" n="Username" required="true"/>
+    <sfField extraTypeInfo="personname" length="80" n="LastName" required="true" t="Last Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="FirstName" t="First Name"/>
+    <sfField createable="false" extraTypeInfo="personname" length="121" n="Name" nameField="true" required="true" t="Full Name" updateable="false"/>
+    <sfField length="80" n="CompanyName" t="Company Name"/>
+    <sfField length="80" n="Division"/>
+    <sfField length="80" n="Department"/>
+    <sfField length="80" n="Title"/>
+    <sfField extraTypeInfo="plaintextarea" length="255" n="Street" type="textarea"/>
+    <sfField length="40" n="City"/>
+    <sfField length="80" n="State" t="State/Province"/>
+    <sfField length="20" n="PostalCode" t="Zip/Postal Code"/>
+    <sfField length="80" n="Country"/>
+    <sfField n="Latitude" precision="18" scale="15" type="_double"/>
+    <sfField n="Longitude" precision="18" scale="15" type="_double"/>
+    <sfField length="40" n="GeocodeAccuracy" restrictedPicklist="true" t="Geocode Accuracy" type="picklist">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Address" s=""/>
+        <sfPLE id="2" n="NearAddress" s=""/>
+        <sfPLE id="3" n="Block" s=""/>
+        <sfPLE id="4" n="Street" s=""/>
+        <sfPLE id="5" n="ExtendedZip" s=""/>
+        <sfPLE id="6" n="Zip" s=""/>
+        <sfPLE id="7" n="Neighborhood" s=""/>
+        <sfPLE id="8" n="City" s=""/>
+        <sfPLE id="9" n="County" s=""/>
+        <sfPLE id="10" n="State" s=""/>
+        <sfPLE id="11" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="Address" type="address" updateable="false"/>
+    <sfField length="128" n="Email" required="true" type="email"/>
+    <sfField n="EmailPreferencesAutoBcc" required="true" t="AutoBcc" type="_boolean"/>
+    <sfField n="EmailPreferencesAutoBccStayInTouch" required="true" t="AutoBccStayInTouch" type="_boolean"/>
+    <sfField n="EmailPreferencesStayInTouchReminder" required="true" t="StayInTouchReminder" type="_boolean"/>
+    <sfField length="80" n="SenderEmail" t="Email Sender Address" type="email"/>
+    <sfField length="80" n="SenderName" t="Email Sender Name"/>
+    <sfField extraTypeInfo="plaintextarea" length="1333" n="Signature" t="Email Signature" type="textarea"/>
+    <sfField length="80" n="StayInTouchSubject" t="Stay-in-Touch Email Subject"/>
+    <sfField extraTypeInfo="plaintextarea" length="512" n="StayInTouchSignature" t="Stay-in-Touch Email Signature" type="textarea"/>
+    <sfField length="512" n="StayInTouchNote" t="Stay-in-Touch Email Note"/>
+    <sfField length="40" n="Phone" type="phone"/>
+    <sfField length="40" n="Fax" type="phone"/>
+    <sfField length="40" n="MobilePhone" t="Mobile" type="phone"/>
+    <sfField length="8" n="Alias" required="true"/>
+    <sfField length="40" n="CommunityNickname" required="true" t="Nickname"/>
+    <sfField createable="false" length="80" n="BadgeText" t="User Photo badge text overlay" updateable="false"/>
+    <sfField editPermission="false" n="IsActive" t="Active" type="_boolean"/>
+    <sfField length="40" n="TimeZoneSidKey" required="true" restrictedPicklist="true" t="Time Zone" type="picklist">
+      <picklistEntryIds>12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="12" n="Pacific/Kiritimati" s="" t="(GMT+14:00) Line Is. Time (Pacific/Kiritimati)"/>
+        <sfPLE id="13" n="Pacific/Chatham" s="" t="(GMT+13:45) Chatham Daylight Time (Pacific/Chatham)"/>
+        <sfPLE id="14" n="Pacific/Auckland" s="" t="(GMT+13:00) New Zealand Daylight Time (Pacific/Auckland)"/>
+        <sfPLE id="15" n="Pacific/Enderbury" s="" t="(GMT+13:00) Phoenix Is. Time (Pacific/Enderbury)"/>
+        <sfPLE id="16" n="Pacific/Tongatapu" s="" t="(GMT+13:00) Tonga Time (Pacific/Tongatapu)"/>
+        <sfPLE id="17" n="Asia/Kamchatka" s="" t="(GMT+12:00) Petropavlovsk-Kamchatski Time (Asia/Kamchatka)"/>
+        <sfPLE id="18" n="Pacific/Fiji" s="" t="(GMT+12:00) Fiji Time (Pacific/Fiji)"/>
+        <sfPLE id="19" n="Australia/Lord_Howe" s="" t="(GMT+11:00) Lord Howe Daylight Time (Australia/Lord_Howe)"/>
+        <sfPLE id="20" n="Australia/Sydney" s="" t="(GMT+11:00) Australian Eastern Daylight Time (New South Wales) (Australia/Sydney)"/>
+        <sfPLE id="21" n="Pacific/Guadalcanal" s="" t="(GMT+11:00) Solomon Is. Time (Pacific/Guadalcanal)"/>
+        <sfPLE id="22" n="Pacific/Norfolk" s="" t="(GMT+11:00) Norfolk Time (Pacific/Norfolk)"/>
+        <sfPLE id="23" n="Australia/Adelaide" s="" t="(GMT+10:30) Australian Central Daylight Time (South Australia) (Australia/Adelaide)"/>
+        <sfPLE id="24" n="Australia/Brisbane" s="" t="(GMT+10:00) Australian Eastern Standard Time (Queensland) (Australia/Brisbane)"/>
+        <sfPLE id="25" n="Australia/Darwin" s="" t="(GMT+09:30) Australian Central Standard Time (Northern Territory) (Australia/Darwin)"/>
+        <sfPLE id="26" n="Asia/Seoul" s="" t="(GMT+09:00) Korea Standard Time (Asia/Seoul)"/>
+        <sfPLE id="27" n="Asia/Tokyo" s="" t="(GMT+09:00) Japan Standard Time (Asia/Tokyo)"/>
+        <sfPLE id="28" n="Asia/Hong_Kong" s="" t="(GMT+08:00) Hong Kong Time (Asia/Hong_Kong)"/>
+        <sfPLE id="29" n="Asia/Kuala_Lumpur" s="" t="(GMT+08:00) Malaysia Time (Asia/Kuala_Lumpur)"/>
+        <sfPLE id="30" n="Asia/Manila" s="" t="(GMT+08:00) Philippines Time (Asia/Manila)"/>
+        <sfPLE id="31" n="Asia/Shanghai" s="" t="(GMT+08:00) China Standard Time (Asia/Shanghai)"/>
+        <sfPLE id="32" n="Asia/Singapore" s="" t="(GMT+08:00) Singapore Time (Asia/Singapore)"/>
+        <sfPLE id="33" n="Asia/Taipei" s="" t="(GMT+08:00) China Standard Time (Asia/Taipei)"/>
+        <sfPLE id="34" n="Australia/Perth" s="" t="(GMT+08:00) Australian Western Standard Time (Australia/Perth)"/>
+        <sfPLE id="35" n="Asia/Bangkok" s="" t="(GMT+07:00) Indochina Time (Asia/Bangkok)"/>
+        <sfPLE id="36" n="Asia/Ho_Chi_Minh" s="" t="(GMT+07:00) Indochina Time (Asia/Ho_Chi_Minh)"/>
+        <sfPLE id="37" n="Asia/Jakarta" s="" t="(GMT+07:00) West Indonesia Time (Asia/Jakarta)"/>
+        <sfPLE id="38" n="Asia/Rangoon" s="" t="(GMT+06:30) Myanmar Time (Asia/Rangoon)"/>
+        <sfPLE id="39" n="Asia/Dhaka" s="" t="(GMT+06:00) Bangladesh Time (Asia/Dhaka)"/>
+        <sfPLE id="40" n="Asia/Kathmandu" s="" t="(GMT+05:45) Nepal Time (Asia/Kathmandu)"/>
+        <sfPLE id="41" n="Asia/Colombo" s="" t="(GMT+05:30) India Standard Time (Asia/Colombo)"/>
+        <sfPLE id="42" n="Asia/Kolkata" s="" t="(GMT+05:30) India Standard Time (Asia/Kolkata)"/>
+        <sfPLE id="43" n="Asia/Karachi" s="" t="(GMT+05:00) Pakistan Time (Asia/Karachi)"/>
+        <sfPLE id="44" n="Asia/Tashkent" s="" t="(GMT+05:00) Uzbekistan Time (Asia/Tashkent)"/>
+        <sfPLE id="45" n="Asia/Yekaterinburg" s="" t="(GMT+05:00) Yekaterinburg Time (Asia/Yekaterinburg)"/>
+        <sfPLE id="46" n="Asia/Kabul" s="" t="(GMT+04:30) Afghanistan Time (Asia/Kabul)"/>
+        <sfPLE id="47" n="Asia/Baku" s="" t="(GMT+04:00) Azerbaijan Time (Asia/Baku)"/>
+        <sfPLE id="48" n="Asia/Dubai" s="" t="(GMT+04:00) Gulf Standard Time (Asia/Dubai)"/>
+        <sfPLE id="49" n="Asia/Tbilisi" s="" t="(GMT+04:00) Georgia Time (Asia/Tbilisi)"/>
+        <sfPLE id="50" n="Asia/Yerevan" s="" t="(GMT+04:00) Armenia Time (Asia/Yerevan)"/>
+        <sfPLE id="51" n="Asia/Tehran" s="" t="(GMT+03:30) Iran Standard Time (Asia/Tehran)"/>
+        <sfPLE id="52" n="Africa/Nairobi" s="" t="(GMT+03:00) Eastern African Time (Africa/Nairobi)"/>
+        <sfPLE id="53" n="Asia/Baghdad" s="" t="(GMT+03:00) Arabia Standard Time (Asia/Baghdad)"/>
+        <sfPLE id="54" n="Asia/Kuwait" s="" t="(GMT+03:00) Arabia Standard Time (Asia/Kuwait)"/>
+        <sfPLE id="55" n="Asia/Riyadh" s="" t="(GMT+03:00) Arabia Standard Time (Asia/Riyadh)"/>
+        <sfPLE id="56" n="Europe/Istanbul" s="" t="(GMT+03:00) Eastern European Time (Europe/Istanbul)"/>
+        <sfPLE id="57" n="Europe/Minsk" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Minsk)"/>
+        <sfPLE id="58" n="Europe/Moscow" s="" t="(GMT+03:00) Moscow Standard Time (Europe/Moscow)"/>
+        <sfPLE id="59" n="Africa/Cairo" s="" t="(GMT+02:00) Eastern European Time (Africa/Cairo)"/>
+        <sfPLE id="60" n="Africa/Johannesburg" s="" t="(GMT+02:00) South Africa Standard Time (Africa/Johannesburg)"/>
+        <sfPLE id="61" n="Asia/Beirut" s="" t="(GMT+02:00) Eastern European Time (Asia/Beirut)"/>
+        <sfPLE id="62" n="Asia/Jerusalem" s="" t="(GMT+02:00) Israel Standard Time (Asia/Jerusalem)"/>
+        <sfPLE id="63" n="Europe/Athens" s="" t="(GMT+02:00) Eastern European Time (Europe/Athens)"/>
+        <sfPLE id="64" n="Europe/Bucharest" s="" t="(GMT+02:00) Eastern European Time (Europe/Bucharest)"/>
+        <sfPLE id="65" n="Europe/Helsinki" s="" t="(GMT+02:00) Eastern European Time (Europe/Helsinki)"/>
+        <sfPLE id="66" n="Africa/Algiers" s="" t="(GMT+01:00) Central European Time (Africa/Algiers)"/>
+        <sfPLE id="67" n="Africa/Casablanca" s="" t="(GMT+01:00) Western European Time (Africa/Casablanca)"/>
+        <sfPLE id="68" n="Europe/Amsterdam" s="" t="(GMT+01:00) Central European Time (Europe/Amsterdam)"/>
+        <sfPLE id="69" n="Europe/Berlin" s="" t="(GMT+01:00) Central European Time (Europe/Berlin)"/>
+        <sfPLE id="70" n="Europe/Brussels" s="" t="(GMT+01:00) Central European Time (Europe/Brussels)"/>
+        <sfPLE id="71" n="Europe/Paris" s="" t="(GMT+01:00) Central European Time (Europe/Paris)"/>
+        <sfPLE id="72" n="Europe/Prague" s="" t="(GMT+01:00) Central European Time (Europe/Prague)"/>
+        <sfPLE id="73" n="Europe/Rome" s="" t="(GMT+01:00) Central European Time (Europe/Rome)"/>
+        <sfPLE id="74" n="Europe/Dublin" s="" t="(GMT+00:00) Irish Summer Time (Europe/Dublin)"/>
+        <sfPLE id="75" n="Europe/Lisbon" s="" t="(GMT+00:00) Western European Time (Europe/Lisbon)"/>
+        <sfPLE id="76" n="Europe/London" s="" t="(GMT+00:00) Greenwich Mean Time (Europe/London)"/>
+        <sfPLE id="77" n="GMT" s="" t="(GMT+00:00) Greenwich Mean Time (GMT)"/>
+        <sfPLE id="78" n="America/Scoresbysund" s="" t="(GMT-01:00) Eastern Greenland Time (America/Scoresbysund)"/>
+        <sfPLE id="79" n="Atlantic/Azores" s="" t="(GMT-01:00) Azores Time (Atlantic/Azores)"/>
+        <sfPLE id="80" n="Atlantic/Cape_Verde" s="" t="(GMT-01:00) Cape Verde Time (Atlantic/Cape_Verde)"/>
+        <sfPLE id="81" n="Atlantic/South_Georgia" s="" t="(GMT-02:00) South Georgia Standard Time (Atlantic/South_Georgia)"/>
+        <sfPLE id="82" n="America/St_Johns" s="" t="(GMT-02:30) Newfoundland Daylight Time (America/St_Johns)"/>
+        <sfPLE id="83" n="America/Argentina/Buenos_Aires" s="" t="(GMT-03:00) Argentine Time (America/Argentina/Buenos_Aires)"/>
+        <sfPLE id="84" n="America/Halifax" s="" t="(GMT-03:00) Atlantic Daylight Time (America/Halifax)"/>
+        <sfPLE id="85" n="America/Santiago" s="" t="(GMT-03:00) Chile Summer Time (America/Santiago)"/>
+        <sfPLE id="86" n="America/Sao_Paulo" s="" t="(GMT-03:00) Brasilia Time (America/Sao_Paulo)"/>
+        <sfPLE id="87" n="Atlantic/Bermuda" s="" t="(GMT-03:00) Atlantic Daylight Time (Atlantic/Bermuda)"/>
+        <sfPLE id="88" n="America/Caracas" s="" t="(GMT-04:00) Venezuela Time (America/Caracas)"/>
+        <sfPLE id="89" n="America/Indiana/Indianapolis" s="" t="(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)"/>
+        <sfPLE id="90" n="America/New_York" s="" t="(GMT-04:00) Eastern Daylight Time (America/New_York)"/>
+        <sfPLE id="91" n="America/Puerto_Rico" s="" t="(GMT-04:00) Atlantic Standard Time (America/Puerto_Rico)"/>
+        <sfPLE id="92" n="America/Bogota" s="" t="(GMT-05:00) Colombia Time (America/Bogota)"/>
+        <sfPLE id="93" n="America/Chicago" s="" t="(GMT-05:00) Central Daylight Time (America/Chicago)"/>
+        <sfPLE id="94" n="America/Lima" s="" t="(GMT-05:00) Peru Time (America/Lima)"/>
+        <sfPLE id="95" n="America/Panama" s="" t="(GMT-05:00) Eastern Standard Time (America/Panama)"/>
+        <sfPLE id="96" n="America/Denver" s="" t="(GMT-06:00) Mountain Daylight Time (America/Denver)"/>
+        <sfPLE id="97" n="America/El_Salvador" s="" t="(GMT-06:00) Central Standard Time (America/El_Salvador)"/>
+        <sfPLE id="98" n="America/Mexico_City" s="" t="(GMT-06:00) Central Standard Time (America/Mexico_City)"/>
+        <sfPLE id="99" n="America/Los_Angeles" s="" t="(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)"/>
+        <sfPLE id="100" n="America/Mazatlan" s="" t="(GMT-07:00) Mountain Standard Time (America/Mazatlan)"/>
+        <sfPLE id="101" n="America/Phoenix" s="" t="(GMT-07:00) Mountain Standard Time (America/Phoenix)"/>
+        <sfPLE id="102" n="America/Tijuana" s="" t="(GMT-07:00) Pacific Daylight Time (America/Tijuana)"/>
+        <sfPLE id="103" n="America/Anchorage" s="" t="(GMT-08:00) Alaska Daylight Time (America/Anchorage)"/>
+        <sfPLE id="104" n="Pacific/Pitcairn" s="" t="(GMT-08:00) Pitcairn Standard Time (Pacific/Pitcairn)"/>
+        <sfPLE id="105" n="America/Adak" s="" t="(GMT-09:00) Hawaii-Aleutian Daylight Time (America/Adak)"/>
+        <sfPLE id="106" n="Pacific/Gambier" s="" t="(GMT-09:00) Gambier Time (Pacific/Gambier)"/>
+        <sfPLE id="107" n="Pacific/Marquesas" s="" t="(GMT-09:30) Marquesas Time (Pacific/Marquesas)"/>
+        <sfPLE id="108" n="Pacific/Honolulu" s="" t="(GMT-10:00) Hawaii-Aleutian Standard Time (Pacific/Honolulu)"/>
+        <sfPLE id="109" n="Pacific/Niue" s="" t="(GMT-11:00) Niue Time (Pacific/Niue)"/>
+        <sfPLE id="110" n="Pacific/Pago_Pago" s="" t="(GMT-11:00) Samoa Standard Time (Pacific/Pago_Pago)"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="18" n="UserRoleId" relationshipName="UserRole" t="Role ID" type="reference">
+      <referenceTos>
+        <string>UserRole</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="LocaleSidKey" required="true" restrictedPicklist="true" t="Locale" type="picklist">
+      <picklistEntryIds>111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="111" n="sq_AL" s="" t="Albanian (Albania)"/>
+        <sfPLE id="112" n="ar_DZ" s="" t="Arabic (Algeria)"/>
+        <sfPLE id="113" n="ar_BH" s="" t="Arabic (Bahrain)"/>
+        <sfPLE id="114" n="ar_EG" s="" t="Arabic (Egypt)"/>
+        <sfPLE id="115" n="ar_IQ" s="" t="Arabic (Iraq)"/>
+        <sfPLE id="116" n="ar_JO" s="" t="Arabic (Jordan)"/>
+        <sfPLE id="117" n="ar_KW" s="" t="Arabic (Kuwait)"/>
+        <sfPLE id="118" n="ar_LB" s="" t="Arabic (Lebanon)"/>
+        <sfPLE id="119" n="ar_LY" s="" t="Arabic (Libya)"/>
+        <sfPLE id="120" n="ar_MA" s="" t="Arabic (Morocco)"/>
+        <sfPLE id="121" n="ar_OM" s="" t="Arabic (Oman)"/>
+        <sfPLE id="122" n="ar_QA" s="" t="Arabic (Qatar)"/>
+        <sfPLE id="123" n="ar_SA" s="" t="Arabic (Saudi Arabia)"/>
+        <sfPLE id="124" n="ar_SD" s="" t="Arabic (Sudan)"/>
+        <sfPLE id="125" n="ar_SY" s="" t="Arabic (Syria)"/>
+        <sfPLE id="126" n="ar_TN" s="" t="Arabic (Tunisia)"/>
+        <sfPLE id="127" n="ar_AE" s="" t="Arabic (United Arab Emirates)"/>
+        <sfPLE id="128" n="ar_YE" s="" t="Arabic (Yemen)"/>
+        <sfPLE id="129" n="hy_AM" s="" t="Armenian (Armenia)"/>
+        <sfPLE id="130" n="az_AZ" s="" t="Azerbaijani (Azerbaijan)"/>
+        <sfPLE id="131" n="bn_BD" s="" t="Bangla (Bangladesh)"/>
+        <sfPLE id="132" n="eu_ES" s="" t="Basque (Spain)"/>
+        <sfPLE id="133" n="be_BY" s="" t="Belarusian (Belarus)"/>
+        <sfPLE id="134" n="bs_BA" s="" t="Bosnian (Bosnia &amp; Herzegovina)"/>
+        <sfPLE id="135" n="bg_BG" s="" t="Bulgarian (Bulgaria)"/>
+        <sfPLE id="136" n="my_MM" s="" t="Burmese (Myanmar (Burma))"/>
+        <sfPLE id="137" n="ca_ES" s="" t="Catalan (Spain)"/>
+        <sfPLE id="138" n="zh_CN_PINYIN" s="" t="Chinese (China, Pinyin Ordering)"/>
+        <sfPLE id="139" n="zh_CN_STROKE" s="" t="Chinese (China, Stroke Ordering)"/>
+        <sfPLE id="140" n="zh_CN" s="" t="Chinese (China)"/>
+        <sfPLE id="141" n="zh_HK_STROKE" s="" t="Chinese (Hong Kong SAR China, Stroke Ordering)"/>
+        <sfPLE id="142" n="zh_HK" s="" t="Chinese (Hong Kong SAR China)"/>
+        <sfPLE id="143" n="zh_MO" s="" t="Chinese (Macau SAR China)"/>
+        <sfPLE id="144" n="zh_SG" s="" t="Chinese (Singapore)"/>
+        <sfPLE id="145" n="zh_TW_STROKE" s="" t="Chinese (Taiwan, Stroke Ordering)"/>
+        <sfPLE id="146" n="zh_TW" s="" t="Chinese (Taiwan)"/>
+        <sfPLE id="147" n="hr_HR" s="" t="Croatian (Croatia)"/>
+        <sfPLE id="148" n="cs_CZ" s="" t="Czech (Czechia)"/>
+        <sfPLE id="149" n="da_DK" s="" t="Danish (Denmark)"/>
+        <sfPLE id="150" n="nl_AW" s="" t="Dutch (Aruba)"/>
+        <sfPLE id="151" n="nl_BE" s="" t="Dutch (Belgium)"/>
+        <sfPLE id="152" n="nl_NL" s="" t="Dutch (Netherlands)"/>
+        <sfPLE id="153" n="nl_SR" s="" t="Dutch (Suriname)"/>
+        <sfPLE id="154" n="dz_BT" s="" t="Dzongkha (Bhutan)"/>
+        <sfPLE id="155" n="en_AG" s="" t="English (Antigua &amp; Barbuda)"/>
+        <sfPLE id="156" n="en_AU" s="" t="English (Australia)"/>
+        <sfPLE id="157" n="en_BS" s="" t="English (Bahamas)"/>
+        <sfPLE id="158" n="en_BB" s="" t="English (Barbados)"/>
+        <sfPLE id="159" n="en_BZ" s="" t="English (Belize)"/>
+        <sfPLE id="160" n="en_BM" s="" t="English (Bermuda)"/>
+        <sfPLE id="161" n="en_BW" s="" t="English (Botswana)"/>
+        <sfPLE id="162" n="en_CM" s="" t="English (Cameroon)"/>
+        <sfPLE id="163" n="en_CA" s="" t="English (Canada)"/>
+        <sfPLE id="164" n="en_KY" s="" t="English (Cayman Islands)"/>
+        <sfPLE id="165" n="en_ER" s="" t="English (Eritrea)"/>
+        <sfPLE id="166" n="en_FK" s="" t="English (Falkland Islands)"/>
+        <sfPLE id="167" n="en_FJ" s="" t="English (Fiji)"/>
+        <sfPLE id="168" n="en_GM" s="" t="English (Gambia)"/>
+        <sfPLE id="169" n="en_GH" s="" t="English (Ghana)"/>
+        <sfPLE id="170" n="en_GI" s="" t="English (Gibraltar)"/>
+        <sfPLE id="171" n="en_GY" s="" t="English (Guyana)"/>
+        <sfPLE id="172" n="en_HK" s="" t="English (Hong Kong SAR China)"/>
+        <sfPLE id="173" n="en_IN" s="" t="English (India)"/>
+        <sfPLE id="174" n="en_ID" s="" t="English (Indonesia)"/>
+        <sfPLE id="175" n="en_IE" s="" t="English (Ireland)"/>
+        <sfPLE id="176" n="en_JM" s="" t="English (Jamaica)"/>
+        <sfPLE id="177" n="en_KE" s="" t="English (Kenya)"/>
+        <sfPLE id="178" n="en_LR" s="" t="English (Liberia)"/>
+        <sfPLE id="179" n="en_MG" s="" t="English (Madagascar)"/>
+        <sfPLE id="180" n="en_MW" s="" t="English (Malawi)"/>
+        <sfPLE id="181" n="en_MY" s="" t="English (Malaysia)"/>
+        <sfPLE id="182" n="en_MU" s="" t="English (Mauritius)"/>
+        <sfPLE id="183" n="en_NA" s="" t="English (Namibia)"/>
+        <sfPLE id="184" n="en_NZ" s="" t="English (New Zealand)"/>
+        <sfPLE id="185" n="en_NG" s="" t="English (Nigeria)"/>
+        <sfPLE id="186" n="en_PK" s="" t="English (Pakistan)"/>
+        <sfPLE id="187" n="en_PG" s="" t="English (Papua New Guinea)"/>
+        <sfPLE id="188" n="en_PH" s="" t="English (Philippines)"/>
+        <sfPLE id="189" n="en_RW" s="" t="English (Rwanda)"/>
+        <sfPLE id="190" n="en_WS" s="" t="English (Samoa)"/>
+        <sfPLE id="191" n="en_SC" s="" t="English (Seychelles)"/>
+        <sfPLE id="192" n="en_SL" s="" t="English (Sierra Leone)"/>
+        <sfPLE id="193" n="en_SG" s="" t="English (Singapore)"/>
+        <sfPLE id="194" n="en_SX" s="" t="English (Sint Maarten)"/>
+        <sfPLE id="195" n="en_SB" s="" t="English (Solomon Islands)"/>
+        <sfPLE id="196" n="en_ZA" s="" t="English (South Africa)"/>
+        <sfPLE id="197" n="en_SH" s="" t="English (St. Helena)"/>
+        <sfPLE id="198" n="en_SZ" s="" t="English (Swaziland)"/>
+        <sfPLE id="199" n="en_TZ" s="" t="English (Tanzania)"/>
+        <sfPLE id="200" n="en_TO" s="" t="English (Tonga)"/>
+        <sfPLE id="201" n="en_TT" s="" t="English (Trinidad &amp; Tobago)"/>
+        <sfPLE id="202" n="en_UG" s="" t="English (Uganda)"/>
+        <sfPLE id="203" n="en_GB" s="" t="English (United Kingdom)"/>
+        <sfPLE id="204" n="en_US" s="" t="English (United States)"/>
+        <sfPLE id="205" n="en_VU" s="" t="English (Vanuatu)"/>
+        <sfPLE id="206" n="et_EE" s="" t="Estonian (Estonia)"/>
+        <sfPLE id="207" n="fi_FI" s="" t="Finnish (Finland)"/>
+        <sfPLE id="208" n="fr_BE" s="" t="French (Belgium)"/>
+        <sfPLE id="209" n="fr_CA" s="" t="French (Canada)"/>
+        <sfPLE id="210" n="fr_KM" s="" t="French (Comoros)"/>
+        <sfPLE id="211" n="fr_FR" s="" t="French (France)"/>
+        <sfPLE id="212" n="fr_GN" s="" t="French (Guinea)"/>
+        <sfPLE id="213" n="fr_HT" s="" t="French (Haiti)"/>
+        <sfPLE id="214" n="fr_LU" s="" t="French (Luxembourg)"/>
+        <sfPLE id="215" n="fr_MR" s="" t="French (Mauritania)"/>
+        <sfPLE id="216" n="fr_MC" s="" t="French (Monaco)"/>
+        <sfPLE id="217" n="fr_CH" s="" t="French (Switzerland)"/>
+        <sfPLE id="218" n="fr_WF" s="" t="French (Wallis &amp; Futuna)"/>
+        <sfPLE id="219" n="ka_GE" s="" t="Georgian (Georgia)"/>
+        <sfPLE id="220" n="de_AT" s="" t="German (Austria)"/>
+        <sfPLE id="221" n="de_BE" s="" t="German (Belgium)"/>
+        <sfPLE id="222" n="de_DE" s="" t="German (Germany)"/>
+        <sfPLE id="223" n="de_LU" s="" t="German (Luxembourg)"/>
+        <sfPLE id="224" n="de_CH" s="" t="German (Switzerland)"/>
+        <sfPLE id="225" n="el_GR" s="" t="Greek (Greece)"/>
+        <sfPLE id="226" n="iw_IL" s="" t="Hebrew (Israel)"/>
+        <sfPLE id="227" n="hi_IN" s="" t="Hindi (India)"/>
+        <sfPLE id="228" n="hu_HU" s="" t="Hungarian (Hungary)"/>
+        <sfPLE id="229" n="is_IS" s="" t="Icelandic (Iceland)"/>
+        <sfPLE id="230" n="in_ID" s="" t="Indonesian (Indonesia)"/>
+        <sfPLE id="231" n="ga_IE" s="" t="Irish (Ireland)"/>
+        <sfPLE id="232" n="it_IT" s="" t="Italian (Italy)"/>
+        <sfPLE id="233" n="it_CH" s="" t="Italian (Switzerland)"/>
+        <sfPLE id="234" n="ja_JP" s="" t="Japanese (Japan)"/>
+        <sfPLE id="235" n="kk_KZ" s="" t="Kazakh (Kazakhstan)"/>
+        <sfPLE id="236" n="km_KH" s="" t="Khmer (Cambodia)"/>
+        <sfPLE id="237" n="ko_KP" s="" t="Korean (North Korea)"/>
+        <sfPLE id="238" n="ko_KR" s="" t="Korean (South Korea)"/>
+        <sfPLE id="239" n="ky_KG" s="" t="Kyrgyz (Kyrgyzstan)"/>
+        <sfPLE id="240" n="lo_LA" s="" t="Lao (Laos)"/>
+        <sfPLE id="241" n="lv_LV" s="" t="Latvian (Latvia)"/>
+        <sfPLE id="242" n="lt_LT" s="" t="Lithuanian (Lithuania)"/>
+        <sfPLE id="243" n="lu_CD" s="" t="Luba-Katanga (Congo - Kinshasa)"/>
+        <sfPLE id="244" n="lb_LU" s="" t="Luxembourgish (Luxembourg)"/>
+        <sfPLE id="245" n="mk_MK" s="" t="Macedonian (Macedonia)"/>
+        <sfPLE id="246" n="ms_BN" s="" t="Malay (Brunei)"/>
+        <sfPLE id="247" n="ms_MY" s="" t="Malay (Malaysia)"/>
+        <sfPLE id="248" n="mt_MT" s="" t="Maltese (Malta)"/>
+        <sfPLE id="249" n="sh_ME" s="" t="Montenegrin (Montenegro)"/>
+        <sfPLE id="250" n="ne_NP" s="" t="Nepali (Nepal)"/>
+        <sfPLE id="251" n="no_NO" s="" t="Norwegian (Norway)"/>
+        <sfPLE id="252" n="ps_AF" s="" t="Pashto (Afghanistan)"/>
+        <sfPLE id="253" n="fa_IR" s="" t="Persian (Iran)"/>
+        <sfPLE id="254" n="pl_PL" s="" t="Polish (Poland)"/>
+        <sfPLE id="255" n="pt_AO" s="" t="Portuguese (Angola)"/>
+        <sfPLE id="256" n="pt_BR" s="" t="Portuguese (Brazil)"/>
+        <sfPLE id="257" n="pt_CV" s="" t="Portuguese (Cape Verde)"/>
+        <sfPLE id="258" n="pt_MZ" s="" t="Portuguese (Mozambique)"/>
+        <sfPLE id="259" n="pt_PT" s="" t="Portuguese (Portugal)"/>
+        <sfPLE id="260" n="pt_ST" s="" t="Portuguese (São Tomé &amp; Príncipe)"/>
+        <sfPLE id="261" n="ro_MD" s="" t="Romanian (Moldova)"/>
+        <sfPLE id="262" n="ro_RO" s="" t="Romanian (Romania)"/>
+        <sfPLE id="263" n="rm_CH" s="" t="Romansh (Switzerland)"/>
+        <sfPLE id="264" n="rn_BI" s="" t="Rundi (Burundi)"/>
+        <sfPLE id="265" n="ru_RU" s="" t="Russian (Russia)"/>
+        <sfPLE id="266" n="sr_BA" s="" t="Serbian (Cyrillic) (Bosnia and Herzegovina)"/>
+        <sfPLE id="267" n="sr_CS" s="" t="Serbian (Cyrillic) (Serbia)"/>
+        <sfPLE id="268" n="sh_BA" s="" t="Serbian (Latin) (Bosnia and Herzegovina)"/>
+        <sfPLE id="269" n="sh_CS" s="" t="Serbian (Latin) (Serbia)"/>
+        <sfPLE id="270" n="sr_RS" s="" t="Serbian (Serbia)"/>
+        <sfPLE id="271" n="sk_SK" s="" t="Slovak (Slovakia)"/>
+        <sfPLE id="272" n="sl_SI" s="" t="Slovenian (Slovenia)"/>
+        <sfPLE id="273" n="so_DJ" s="" t="Somali (Djibouti)"/>
+        <sfPLE id="274" n="so_SO" s="" t="Somali (Somalia)"/>
+        <sfPLE id="275" n="es_AR" s="" t="Spanish (Argentina)"/>
+        <sfPLE id="276" n="es_BO" s="" t="Spanish (Bolivia)"/>
+        <sfPLE id="277" n="es_CL" s="" t="Spanish (Chile)"/>
+        <sfPLE id="278" n="es_CO" s="" t="Spanish (Colombia)"/>
+        <sfPLE id="279" n="es_CR" s="" t="Spanish (Costa Rica)"/>
+        <sfPLE id="280" n="es_CU" s="" t="Spanish (Cuba)"/>
+        <sfPLE id="281" n="es_DO" s="" t="Spanish (Dominican Republic)"/>
+        <sfPLE id="282" n="es_EC" s="" t="Spanish (Ecuador)"/>
+        <sfPLE id="283" n="es_SV" s="" t="Spanish (El Salvador)"/>
+        <sfPLE id="284" n="es_GT" s="" t="Spanish (Guatemala)"/>
+        <sfPLE id="285" n="es_HN" s="" t="Spanish (Honduras)"/>
+        <sfPLE id="286" n="es_MX" s="" t="Spanish (Mexico)"/>
+        <sfPLE id="287" n="es_NI" s="" t="Spanish (Nicaragua)"/>
+        <sfPLE id="288" n="es_PA" s="" t="Spanish (Panama)"/>
+        <sfPLE id="289" n="es_PY" s="" t="Spanish (Paraguay)"/>
+        <sfPLE id="290" n="es_PE" s="" t="Spanish (Peru)"/>
+        <sfPLE id="291" n="es_PR" s="" t="Spanish (Puerto Rico)"/>
+        <sfPLE id="292" n="es_ES" s="" t="Spanish (Spain)"/>
+        <sfPLE id="293" n="es_US" s="" t="Spanish (United States)"/>
+        <sfPLE id="294" n="es_UY" s="" t="Spanish (Uruguay)"/>
+        <sfPLE id="295" n="es_VE" s="" t="Spanish (Venezuela)"/>
+        <sfPLE id="296" n="sv_SE" s="" t="Swedish (Sweden)"/>
+        <sfPLE id="297" n="tl_PH" s="" t="Tagalog (Philippines)"/>
+        <sfPLE id="298" n="tg_TJ" s="" t="Tajik (Tajikistan)"/>
+        <sfPLE id="299" n="ta_IN" s="" t="Tamil (India)"/>
+        <sfPLE id="300" n="ta_LK" s="" t="Tamil (Sri Lanka)"/>
+        <sfPLE id="301" n="th_TH" s="" t="Thai (Thailand)"/>
+        <sfPLE id="302" n="ti_ET" s="" t="Tigrinya (Ethiopia)"/>
+        <sfPLE id="303" n="tr_TR" s="" t="Turkish (Turkey)"/>
+        <sfPLE id="304" n="uk_UA" s="" t="Ukrainian (Ukraine)"/>
+        <sfPLE id="305" n="ur_PK" s="" t="Urdu (Pakistan)"/>
+        <sfPLE id="306" n="uz_LATN_UZ" s="" t="Uzbek (LATN,UZ)"/>
+        <sfPLE id="307" n="vi_VN" s="" t="Vietnamese (Vietnam)"/>
+        <sfPLE id="308" n="cy_GB" s="" t="Welsh (United Kingdom)"/>
+        <sfPLE id="309" n="yo_BJ" s="" t="Yoruba (Benin)"/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="ReceivesInfoEmails" t="Info Emails" type="_boolean"/>
+    <sfField n="ReceivesAdminInfoEmails" t="Admin Info Emails" type="_boolean"/>
+    <sfField length="40" n="EmailEncodingKey" required="true" restrictedPicklist="true" t="Email Encoding" type="picklist">
+      <picklistEntryIds>310,311,312,313,314,315,316,317,318,319</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="310" n="UTF-8" s="" t="Unicode (UTF-8)"/>
+        <sfPLE id="311" n="ISO-8859-1" s="" t="General US &amp; Western Europe (ISO-8859-1, ISO-LATIN-1)"/>
+        <sfPLE id="312" n="Shift_JIS" s="" t="Japanese (Shift-JIS)"/>
+        <sfPLE id="313" n="ISO-2022-JP" s="" t="Japanese (JIS)"/>
+        <sfPLE id="314" n="EUC-JP" s="" t="Japanese (EUC)"/>
+        <sfPLE id="315" n="ks_c_5601-1987" s="" t="Korean (ks_c_5601-1987)"/>
+        <sfPLE id="316" n="Big5" s="" t="Traditional Chinese (Big5)"/>
+        <sfPLE id="317" n="GB2312" s="" t="Simplified Chinese (GB2312)"/>
+        <sfPLE id="318" n="Big5-HKSCS" s="" t="Traditional Chinese Hong Kong (Big5-HKSCS)"/>
+        <sfPLE id="319" n="x-SJIS_0213" s="" t="Japanese (Shift-JIS_2004)"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="18" n="ProfileId" relationshipName="Profile" required="true" t="Profile ID" type="reference">
+      <referenceTos>
+        <string>Profile</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="40" n="UserType" restrictedPicklist="true" t="User Type" type="picklist" updateable="false">
+      <picklistEntryIds>320,321,322,323,324,325,326,327</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="320" n="Standard" s=""/>
+        <sfPLE id="321" n="PowerPartner" s="" t="Partner"/>
+        <sfPLE id="322" n="PowerCustomerSuccess" s="" t="Customer Portal Manager"/>
+        <sfPLE id="323" n="CustomerSuccess" s="" t="Customer Portal User"/>
+        <sfPLE id="324" n="Guest" s=""/>
+        <sfPLE id="325" n="CspLitePortal" s="" t="High Volume Portal"/>
+        <sfPLE id="326" n="CsnOnly" s="" t="CSN Only"/>
+        <sfPLE id="327" n="SelfService" s="" t="Self Service"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="LanguageLocaleKey" required="true" restrictedPicklist="true" t="Language" type="picklist">
+      <picklistEntryIds>328,329,330,331,332,333,334,335,336,337,256,338,339,340,341,342,286,343</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="328" n="en_US" s="" t="English"/>
+        <sfPLE id="329" n="de" s="" t="German"/>
+        <sfPLE id="330" n="es" s="" t="Spanish"/>
+        <sfPLE id="331" n="fr" s="" t="French"/>
+        <sfPLE id="332" n="it" s="" t="Italian"/>
+        <sfPLE id="333" n="ja" s="" t="Japanese"/>
+        <sfPLE id="334" n="sv" s="" t="Swedish"/>
+        <sfPLE id="335" n="ko" s="" t="Korean"/>
+        <sfPLE id="336" n="zh_TW" s="" t="Chinese (Traditional)"/>
+        <sfPLE id="337" n="zh_CN" s="" t="Chinese (Simplified)"/>
+        <sfPLE id="256" n="pt_BR" s="" t="Portuguese (Brazil)"/>
+        <sfPLE id="338" n="nl_NL" s="" t="Dutch"/>
+        <sfPLE id="339" n="da" s="" t="Danish"/>
+        <sfPLE id="340" n="th" s="" t="Thai"/>
+        <sfPLE id="341" n="fi" s="" t="Finnish"/>
+        <sfPLE id="342" n="ru" s="" t="Russian"/>
+        <sfPLE id="286" n="es_MX" s="" t="Spanish (Mexico)"/>
+        <sfPLE id="343" n="no" s="" t="Norwegian"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="20" n="EmployeeNumber" t="Employee Number"/>
+    <sfField length="18" n="DelegatedApproverId" t="Delegated Approver ID" type="reference">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ManagerId" relationshipName="Manager" t="Manager ID" type="reference">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" n="LastLoginDate" t="Last Login" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastPasswordChangeDate" t="Last Password Change or Reset" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" n="OfflineTrialExpirationDate" t="Offline Edition Trial Expiration Date" type="datetime" updateable="false"/>
+    <sfField createable="false" n="OfflinePdaTrialExpirationDate" t="Sales Anywhere Trial Expiration Date" type="datetime" updateable="false"/>
+    <sfField n="UserPermissionsMarketingUser" required="true" t="Marketing User" type="_boolean"/>
+    <sfField n="UserPermissionsOfflineUser" required="true" t="Offline User" type="_boolean"/>
+    <sfField n="UserPermissionsCallCenterAutoLogin" required="true" t="Auto-login To Call Center" type="_boolean"/>
+    <sfField n="UserPermissionsMobileUser" required="true" t="Apex Mobile User" type="_boolean"/>
+    <sfField n="UserPermissionsSFContentUser" required="true" t="Salesforce CRM Content User" type="_boolean"/>
+    <sfField n="UserPermissionsKnowledgeUser" required="true" t="Knowledge User" type="_boolean"/>
+    <sfField n="UserPermissionsInteractionUser" required="true" t="Flow User" type="_boolean"/>
+    <sfField n="UserPermissionsSupportUser" required="true" t="Service Cloud User" type="_boolean"/>
+    <sfField n="UserPermissionsJigsawProspectingUser" required="true" t="Data.com User" type="_boolean"/>
+    <sfField n="UserPermissionsSiteforceContributorUser" required="true" t="Site.com Contributor User" type="_boolean"/>
+    <sfField n="UserPermissionsSiteforcePublisherUser" required="true" t="Site.com Publisher User" type="_boolean"/>
+    <sfField n="UserPermissionsWorkDotComUserFeature" required="true" t="Work.com User" type="_boolean"/>
+    <sfField n="ForecastEnabled" t="Allow Forecasting" type="_boolean"/>
+    <sfField n="UserPreferencesActivityRemindersPopup" required="true" t="ActivityRemindersPopup" type="_boolean"/>
+    <sfField n="UserPreferencesEventRemindersCheckboxDefault" required="true" t="EventRemindersCheckboxDefault" type="_boolean"/>
+    <sfField n="UserPreferencesTaskRemindersCheckboxDefault" required="true" t="TaskRemindersCheckboxDefault" type="_boolean"/>
+    <sfField n="UserPreferencesReminderSoundOff" required="true" t="ReminderSoundOff" type="_boolean"/>
+    <sfField n="UserPreferencesDisableAllFeedsEmail" required="true" t="DisableAllFeedsEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableFollowersEmail" required="true" t="DisableFollowersEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableProfilePostEmail" required="true" t="DisableProfilePostEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableChangeCommentEmail" required="true" t="DisableChangeCommentEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableLaterCommentEmail" required="true" t="DisableLaterCommentEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisProfPostCommentEmail" required="true" t="DisProfPostCommentEmail" type="_boolean"/>
+    <sfField n="UserPreferencesContentNoEmail" required="true" t="ContentNoEmail" type="_boolean"/>
+    <sfField n="UserPreferencesContentEmailAsAndWhen" required="true" t="ContentEmailAsAndWhen" type="_boolean"/>
+    <sfField n="UserPreferencesApexPagesDeveloperMode" required="true" t="ApexPagesDeveloperMode" type="_boolean"/>
+    <sfField n="UserPreferencesHideCSNGetChatterMobileTask" required="true" t="HideCSNGetChatterMobileTask" type="_boolean"/>
+    <sfField n="UserPreferencesDisableMentionsPostEmail" required="true" t="DisableMentionsPostEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisMentionsCommentEmail" required="true" t="DisMentionsCommentEmail" type="_boolean"/>
+    <sfField n="UserPreferencesHideCSNDesktopTask" required="true" t="HideCSNDesktopTask" type="_boolean"/>
+    <sfField n="UserPreferencesHideChatterOnboardingSplash" required="true" t="HideChatterOnboardingSplash" type="_boolean"/>
+    <sfField n="UserPreferencesHideSecondChatterOnboardingSplash" required="true" t="HideSecondChatterOnboardingSplash" type="_boolean"/>
+    <sfField n="UserPreferencesDisCommentAfterLikeEmail" required="true" t="DisCommentAfterLikeEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableLikeEmail" required="true" t="DisableLikeEmail" type="_boolean"/>
+    <sfField n="UserPreferencesSortFeedByComment" required="true" t="SortFeedByComment" type="_boolean"/>
+    <sfField n="UserPreferencesDisableMessageEmail" required="true" t="DisableMessageEmail" type="_boolean"/>
+    <sfField n="UserPreferencesJigsawListUser" required="true" t="JigsawListUser" type="_boolean"/>
+    <sfField n="UserPreferencesDisableBookmarkEmail" required="true" t="DisableBookmarkEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableSharePostEmail" required="true" t="DisableSharePostEmail" type="_boolean"/>
+    <sfField n="UserPreferencesEnableAutoSubForFeeds" required="true" t="EnableAutoSubForFeeds" type="_boolean"/>
+    <sfField n="UserPreferencesDisableFileShareNotificationsForApi" required="true" t="DisableFileShareNotificationsForApi" type="_boolean"/>
+    <sfField n="UserPreferencesShowTitleToExternalUsers" required="true" t="ShowTitleToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowManagerToExternalUsers" required="true" t="ShowManagerToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowEmailToExternalUsers" required="true" t="ShowEmailToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowWorkPhoneToExternalUsers" required="true" t="ShowWorkPhoneToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowMobilePhoneToExternalUsers" required="true" t="ShowMobilePhoneToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowFaxToExternalUsers" required="true" t="ShowFaxToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowStreetAddressToExternalUsers" required="true" t="ShowStreetAddressToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowCityToExternalUsers" required="true" t="ShowCityToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowStateToExternalUsers" required="true" t="ShowStateToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowPostalCodeToExternalUsers" required="true" t="ShowPostalCodeToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowCountryToExternalUsers" required="true" t="ShowCountryToExternalUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowProfilePicToGuestUsers" required="true" t="ShowProfilePicToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowTitleToGuestUsers" required="true" t="ShowTitleToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowCityToGuestUsers" required="true" t="ShowCityToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowStateToGuestUsers" required="true" t="ShowStateToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowPostalCodeToGuestUsers" required="true" t="ShowPostalCodeToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowCountryToGuestUsers" required="true" t="ShowCountryToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesDisableFeedbackEmail" required="true" t="DisableFeedbackEmail" type="_boolean"/>
+    <sfField n="UserPreferencesDisableWorkEmail" required="true" t="DisableWorkEmail" type="_boolean"/>
+    <sfField n="UserPreferencesPipelineViewHideHelpPopover" required="true" t="PipelineViewHideHelpPopover" type="_boolean"/>
+    <sfField n="UserPreferencesHideS1BrowserUI" required="true" t="HideS1BrowserUI" type="_boolean"/>
+    <sfField n="UserPreferencesDisableEndorsementEmail" required="true" t="DisableEndorsementEmail" type="_boolean"/>
+    <sfField n="UserPreferencesPathAssistantCollapsed" required="true" t="PathAssistantCollapsed" type="_boolean"/>
+    <sfField n="UserPreferencesCacheDiagnostics" required="true" t="CacheDiagnostics" type="_boolean"/>
+    <sfField n="UserPreferencesShowEmailToGuestUsers" required="true" t="ShowEmailToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowManagerToGuestUsers" required="true" t="ShowManagerToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowWorkPhoneToGuestUsers" required="true" t="ShowWorkPhoneToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowMobilePhoneToGuestUsers" required="true" t="ShowMobilePhoneToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowFaxToGuestUsers" required="true" t="ShowFaxToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesShowStreetAddressToGuestUsers" required="true" t="ShowStreetAddressToGuestUsers" type="_boolean"/>
+    <sfField n="UserPreferencesLightningExperiencePreferred" required="true" t="LightningExperiencePreferred" type="_boolean"/>
+    <sfField n="UserPreferencesPreviewLightning" required="true" t="PreviewLightning" type="_boolean"/>
+    <sfField n="UserPreferencesHideEndUserOnboardingAssistantModal" required="true" t="HideEndUserOnboardingAssistantModal" type="_boolean"/>
+    <sfField n="UserPreferencesHideLightningMigrationModal" required="true" t="HideLightningMigrationModal" type="_boolean"/>
+    <sfField n="UserPreferencesHideSfxWelcomeMat" required="true" t="HideSfxWelcomeMat" type="_boolean"/>
+    <sfField n="UserPreferencesHideBiggerPhotoCallout" required="true" t="HideBiggerPhotoCallout" type="_boolean"/>
+    <sfField n="UserPreferencesGlobalNavBarWTShown" required="true" t="GlobalNavBarWTShown" type="_boolean"/>
+    <sfField n="UserPreferencesGlobalNavGridMenuWTShown" required="true" t="GlobalNavGridMenuWTShown" type="_boolean"/>
+    <sfField n="UserPreferencesCreateLEXAppsWTShown" required="true" t="CreateLEXAppsWTShown" type="_boolean"/>
+    <sfField n="UserPreferencesFavoritesWTShown" required="true" t="FavoritesWTShown" type="_boolean"/>
+    <sfField n="UserPreferencesRecordHomeSectionCollapseWTShown" required="true" t="RecordHomeSectionCollapseWTShown" type="_boolean"/>
+    <sfField n="UserPreferencesRecordHomeReservedWTShown" required="true" t="RecordHomeReservedWTShown" type="_boolean"/>
+    <sfField n="UserPreferencesFavoritesShowTopFavorites" required="true" t="FavoritesShowTopFavorites" type="_boolean"/>
+    <sfField n="UserPreferencesExcludeMailAppAttachments" required="true" t="ExcludeMailAppAttachments" type="_boolean"/>
+    <sfField n="UserPreferencesSuppressTaskSFXReminders" required="true" t="SuppressTaskSFXReminders" type="_boolean"/>
+    <sfField n="UserPreferencesSuppressEventSFXReminders" required="true" t="SuppressEventSFXReminders" type="_boolean"/>
+    <sfField n="UserPreferencesPreviewCustomTheme" required="true" t="PreviewCustomTheme" type="_boolean"/>
+    <sfField n="UserPreferencesHasCelebrationBadge" required="true" t="HasCelebrationBadge" type="_boolean"/>
+    <sfField n="UserPreferencesUserDebugModePref" required="true" t="UserDebugModePref" type="_boolean"/>
+    <sfField n="UserPreferencesNewLightningReportRunPageEnabled" required="true" t="NewLightningReportRunPageEnabled" type="_boolean"/>
+    <sfField length="18" n="ContactId" relationshipName="Contact" t="Contact ID" type="reference">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="18" n="AccountId" relationshipName="Account" t="Account ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="CallCenterId" t="Call Center ID" type="reference">
+      <referenceTos>
+        <string>CallCenter</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="Extension" type="phone"/>
+    <sfField length="512" n="FederationIdentifier" t="SAML Federation ID"/>
+    <sfField extraTypeInfo="plaintextarea" length="1000" n="AboutMe" t="About Me" type="textarea"/>
+    <sfField createable="false" length="1024" n="FullPhotoUrl" t="Url for full-sized Photo" type="url" updateable="false"/>
+    <sfField createable="false" extraTypeInfo="imageurl" length="1024" n="SmallPhotoUrl" t="Photo" type="url" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsExtIndicatorVisible" t="Show external indicator" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="40" n="OutOfOfficeMessage" t="Out of office message" updateable="false"/>
+    <sfField createable="false" extraTypeInfo="imageurl" length="1024" n="MediumPhotoUrl" t="Url for medium profile photo" type="url" updateable="false"/>
+    <sfField length="40" n="DigestFrequency" restrictedPicklist="true" t="Chatter Email Highlights Frequency" type="picklist">
+      <picklistEntryIds>344,345,346</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="344" n="D" s="" t="Daily"/>
+        <sfPLE id="345" n="W" s="" t="Weekly"/>
+        <sfPLE defaultValue="true" id="346" n="N" s="" t="Never"/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="40" n="DefaultGroupNotificationFrequency" restrictedPicklist="true" t="Default Notification Frequency when Joining Groups" type="picklist">
+      <picklistEntryIds>347,348,349,346</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="347" n="P" s="" t="Email on Each Post"/>
+        <sfPLE id="348" n="D" s="" t="Daily Digests"/>
+        <sfPLE id="349" n="W" s="" t="Weekly Digests"/>
+        <sfPLE defaultValue="true" id="346" n="N" s="" t="Never"/>
+      </picklistEntries>
+    </sfField>
+    <sfField digits="9" n="JigsawImportLimitOverride" t="Data.com Monthly Addition Limit" type="_int"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField createable="false" length="1024" n="BannerPhotoUrl" t="Url for banner photo" type="url" updateable="false"/>
+    <sfField createable="false" length="1024" n="SmallBannerPhotoUrl" t="Url for IOS banner photo" type="url" updateable="false"/>
+    <sfField createable="false" length="1024" n="MediumBannerPhotoUrl" t="Url for Android banner photo" type="url" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsProfilePhotoActive" t="Has Profile Photo" type="_boolean" updateable="false"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship alias="RelatedEventAttendeeAccept" childName="AcceptedEventRelation" field="RelationId" n="AcceptedEventRelations" relationshipName="AcceptedEventRelations" s="2-" t="AcceptedEventRelation"/>
+    <sfObjectRelationship childName="AccountCleanInfo" field="LastStatusChangedById" n="AccountCleanInfoReviewers" relationshipName="AccountCleanInfoReviewers" s="2-" t="AccountCleanInfo"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship childName="CollaborationGroupMember" field="MemberId" n="GroupMemberships" relationshipName="GroupMemberships" s="2-" t="CollaborationGroupMember"/>
+    <sfObjectRelationship childName="CollaborationGroupMemberRequest" field="RequesterId" n="GroupMembershipRequests" relationshipName="GroupMembershipRequests" s="2-" t="CollaborationGroupMemberRequest"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="ContactCleanInfo" field="LastStatusChangedById" n="ContactCleanInfoReviewers" relationshipName="ContactCleanInfoReviewers" s="2-" t="ContactCleanInfo"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhoId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship childName="Contract" field="CompanySignedId" n="ContractsSigned" relationshipName="ContractsSigned" s="2-" t="Contract"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeDecline" childName="DeclinedEventRelation" field="RelationId" n="DeclinedEventRelations" relationshipName="DeclinedEventRelations" s="2-" t="DeclinedEventRelation"/>
+    <sfObjectRelationship childName="EmailMessageRelation" field="RelationId" n="EmailMessageRelations" relationshipName="EmailMessageRelations" s="2-" t="EmailMessageRelation"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="EntitySubscription" field="SubscriberId" n="FeedSubscriptions" relationshipName="FeedSubscriptions" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship childName="EventRelation" field="RelationId" n="EventRelations" relationshipName="EventRelations" s="2-" t="EventRelation"/>
+    <sfObjectRelationship childName="ExternalDataUserAuth" field="UserId" n="ExternalDataUserAuths" relationshipName="ExternalDataUserAuths" s="2-" t="ExternalDataUserAuth"/>
+    <sfObjectRelationship childName="InstalledMobileApp" field="UserId" n="InstalledMobileApps" relationshipName="InstalledMobileApps" s="2-" t="InstalledMobileApp"/>
+    <sfObjectRelationship childName="LeadCleanInfo" field="LastStatusChangedById" n="LeadCleanInfoReviewers" relationshipName="LeadCleanInfoReviewers" s="2-" t="LeadCleanInfo"/>
+    <sfObjectRelationship childName="OutgoingEmailRelation" field="RelationId" n="OutgoingEmailRelations" relationshipName="OutgoingEmailRelations" s="2-" t="OutgoingEmailRelation"/>
+    <sfObjectRelationship childName="OwnedContentDocument" field="OwnerId" n="OwnedContentDocuments" relationshipName="OwnedContentDocuments" s="2-" t="OwnedContentDocument"/>
+    <sfObjectRelationship childName="PermissionSetAssignment" field="AssigneeId" n="PermissionSetAssignments" relationshipName="PermissionSetAssignments" s="2-" t="PermissionSetAssignment"/>
+    <sfObjectRelationship childName="PermissionSetLicenseAssign" field="AssigneeId" n="PermissionSetLicenseAssignments" relationshipName="PermissionSetLicenseAssignments" s="2-" t="PermissionSetLicenseAssign"/>
+    <sfObjectRelationship childName="SessionPermSetActivation" field="UserId" n="SessionPermSetActivations" relationshipName="SessionPermSetActivations" s="2-" t="SessionPermSetActivation"/>
+    <sfObjectRelationship childName="Site" field="AdminId" n="UserSites" relationshipName="UserSites" s="2-" t="Site"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeNotDecided" childName="UndecidedEventRelation" field="RelationId" n="UndecidedEventRelations" relationshipName="UndecidedEventRelations" s="2-" t="UndecidedEventRelation"/>
+    <sfObjectRelationship childName="User" field="DelegatedApproverId" n="DelegatedUsers" relationshipName="DelegatedUsers" s="2-" t="User"/>
+    <sfObjectRelationship childName="User" field="ManagerId" n="ManagedUsers" relationshipName="ManagedUsers" s="2-" t="User"/>
+    <sfObjectRelationship childName="UserEmailPreferredPerson" field="PersonRecordId" n="PersonRecord" relationshipName="PersonRecord" s="2-" t="UserEmailPreferredPerson"/>
+    <sfObjectRelationship childName="UserEntityAccess" field="UserId" n="UserEntityAccessRights" relationshipName="UserEntityAccessRights" s="2-" t="UserEntityAccess"/>
+    <sfObjectRelationship childName="UserFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="UserFeed"/>
+    <sfObjectRelationship childName="UserFieldAccess" field="UserId" n="UserFieldAccessRights" relationshipName="UserFieldAccessRights" s="2-" t="UserFieldAccess"/>
+    <sfObjectRelationship childName="UserPreference" field="UserId" n="UserPreferences" relationshipName="UserPreferences" s="2-" t="UserPreference"/>
+    <sfObjectRelationship childName="UserShare" field="UserId" n="Shares" relationshipName="Shares" s="2-" t="UserShare"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink modes="ObjectHome Users List DelegatedUsers ManagedUsers" n="New"/>
+    <sfActionLink modes="View Users DelegatedUsers ManagedUsers" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View Users DelegatedUsers ManagedUsers" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View Users DelegatedUsers ManagedUsers" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Users DelegatedUsers ManagedUsers" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="CallHighlightAction" s=""/>
+    <sfActionLink modes="View" n="CancelEdit"/>
+    <sfActionLink n="DeleteBannerPhotoAction" s=""/>
+    <sfActionLink n="EditUserAction" s=""/>
+    <sfActionLink n="EmailHighlightAction" s=""/>
+    <sfActionLink n="FreezeUserAction" s=""/>
+    <sfActionLink n="LinkToSetupUserDetailAction" s=""/>
+    <sfActionLink n="ManagePermSetsAction" s=""/>
+    <sfActionLink n="PasswordUnlockAction" s=""/>
+    <sfActionLink n="ResetPasswordAction" s=""/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit"/>
+    <sfActionLink n="SmsHighlightAction" s=""/>
+    <sfActionLink n="UpdateBannerPhotoAction" s=""/>
+    <sfActionLink n="UserActivationAction" s=""/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+  </standardActions>
+  <homeListColumns>
+    <string>USER.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>FULL_NAME</string>
+    <string>CORE.USER_ROLE.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>FULL_NAME</string>
+    <string>CORE.USERS.TITLE</string>
+    <string>CORE.USERS.PHONE</string>
+    <string>CORE.USERS.EMAIL</string>
+  </searchResultColumns>
+  <listViewActions/>
+</sfObject>

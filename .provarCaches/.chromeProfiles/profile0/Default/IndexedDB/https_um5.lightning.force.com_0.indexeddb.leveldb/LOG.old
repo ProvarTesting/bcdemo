@@ -1,0 +1,24 @@
+2019/03/20-12:19:29.901 9c03 Reusing MANIFEST /Users/richardclark/bcdemo/.provarCaches/.chromeProfiles/profile0/Default/IndexedDB/https_um5.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/03/20-12:19:29.901 9c03 Recovering log #37
+2019/03/20-12:19:29.908 9c03 Reusing old log /Users/richardclark/bcdemo/.provarCaches/.chromeProfiles/profile0/Default/IndexedDB/https_um5.lightning.force.com_0.indexeddb.leveldb/000037.log 
+2019/03/20-12:19:30.185 1ff0f Compacting 1@1 + 3@2 files
+2019/03/20-12:19:30.192 1ff0f Generated table #40@1: 60 keys, 2400486 bytes
+2019/03/20-12:19:30.201 1ff0f Generated table #41@1: 423 keys, 2126349 bytes
+2019/03/20-12:19:30.221 1ff0f Generated table #42@1: 1757 keys, 1122397 bytes
+2019/03/20-12:19:30.221 1ff0f Compacted 1@1 + 3@2 files => 5649232 bytes
+2019/03/20-12:19:30.222 1ff0f compacted to: files[ 0 0 3 0 0 0 0 ]
+2019/03/20-12:19:31.871 1ff0f Level-0 table #44: started
+2019/03/20-12:19:31.886 1ff0f Level-0 table #44: 3516761 bytes OK
+2019/03/20-12:19:31.887 1ff0f Delete type=2 #38
+2019/03/20-12:19:31.887 1ff0f Delete type=2 #34
+2019/03/20-12:19:31.888 1ff0f Delete type=2 #35
+2019/03/20-12:19:31.888 1ff0f Delete type=2 #36
+2019/03/20-12:19:31.888 1ff0f Delete type=0 #37
+2019/03/20-12:20:11.573 1ff0f Level-0 table #46: started
+2019/03/20-12:20:11.583 1ff0f Level-0 table #46: 3766523 bytes OK
+2019/03/20-12:20:11.584 1ff0f Delete type=0 #43
+2019/03/20-12:20:40.131 1ff0f Compacting 1@0 + 1@1 files
+2019/03/20-12:20:40.153 1ff0f Generated table #47@0: 281 keys, 2116123 bytes
+2019/03/20-12:20:40.159 1ff0f Generated table #48@0: 586 keys, 186720 bytes
+2019/03/20-12:20:40.159 1ff0f Compacted 1@0 + 1@1 files => 2302843 bytes
+2019/03/20-12:20:40.159 1ff0f compacted to: files[ 0 2 3 0 0 0 0 ]

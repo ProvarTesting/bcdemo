@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" defaultCompactLayoutId="Contact.SYSTEM" deleteable="true" feedEnabled="true" keyPrefix="003" label="Contact" labelPlural="Contacts" layoutable="true" listViewFilterType="c" metadataLabel="Contact" n="Contact" queryable="true" retrieveable="true" s="" searchLayoutable="true" standardLabel="Contact" t="Contact (003)" updatable="true" urlDetail="/{ID}" urlEdit="/{ID}/e" urlNew="/003/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Contact ID" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="MasterRecordId" relationshipName="MasterRecord" t="Master Record ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="AccountId" relationshipName="Account" t="Account ID" type="reference">
+      <referenceTos>
+        <string>Account</string>
+      </referenceTos>
+    </sfField>
+    <sfField extraTypeInfo="personname" length="80" n="LastName" required="true" t="Last Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="FirstName" t="First Name"/>
+    <sfField extraTypeInfo="personname" length="40" n="Salutation" standardPickListName="Salutation" type="picklist">
+      <picklistEntryIds>1,2,3,4,5</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Mr." s=""/>
+        <sfPLE id="2" n="Ms." s=""/>
+        <sfPLE id="3" n="Mrs." s=""/>
+        <sfPLE id="4" n="Dr." s=""/>
+        <sfPLE id="5" n="Prof." s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" extraTypeInfo="personname" length="121" n="Name" nameField="true" required="true" t="Full Name" updateable="false"/>
+    <sfField editPermission="false" extraTypeInfo="plaintextarea" length="255" n="OtherStreet" readPermission="false" t="Other Street" type="textarea"/>
+    <sfField editPermission="false" length="40" n="OtherCity" readPermission="false" t="Other City"/>
+    <sfField editPermission="false" length="80" n="OtherState" readPermission="false" t="Other State/Province"/>
+    <sfField editPermission="false" length="20" n="OtherPostalCode" readPermission="false" t="Other Zip/Postal Code"/>
+    <sfField editPermission="false" length="80" n="OtherCountry" readPermission="false" t="Other Country"/>
+    <sfField editPermission="false" n="OtherLatitude" precision="18" readPermission="false" scale="15" t="Other Latitude" type="_double"/>
+    <sfField editPermission="false" n="OtherLongitude" precision="18" readPermission="false" scale="15" t="Other Longitude" type="_double"/>
+    <sfField editPermission="false" length="40" n="OtherGeocodeAccuracy" readPermission="false" restrictedPicklist="true" standardPickListName="GeocodeAccuracy" t="Other Geocode Accuracy" type="picklist">
+      <picklistEntryIds>6,7,8,9,10,11,12,13,14,15,16</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="6" n="Address" s=""/>
+        <sfPLE id="7" n="NearAddress" s=""/>
+        <sfPLE id="8" n="Block" s=""/>
+        <sfPLE id="9" n="Street" s=""/>
+        <sfPLE id="10" n="ExtendedZip" s=""/>
+        <sfPLE id="11" n="Zip" s=""/>
+        <sfPLE id="12" n="Neighborhood" s=""/>
+        <sfPLE id="13" n="City" s=""/>
+        <sfPLE id="14" n="County" s=""/>
+        <sfPLE id="15" n="State" s=""/>
+        <sfPLE id="16" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="OtherAddress" t="Other Address" type="address" updateable="false"/>
+    <sfField editPermission="false" extraTypeInfo="plaintextarea" length="255" n="MailingStreet" readPermission="false" t="Mailing Street" type="textarea"/>
+    <sfField editPermission="false" length="40" n="MailingCity" readPermission="false" t="Mailing City"/>
+    <sfField editPermission="false" length="80" n="MailingState" readPermission="false" t="Mailing State/Province"/>
+    <sfField editPermission="false" length="20" n="MailingPostalCode" readPermission="false" t="Mailing Zip/Postal Code"/>
+    <sfField editPermission="false" length="80" n="MailingCountry" readPermission="false" t="Mailing Country"/>
+    <sfField editPermission="false" n="MailingLatitude" precision="18" readPermission="false" scale="15" t="Mailing Latitude" type="_double"/>
+    <sfField editPermission="false" n="MailingLongitude" precision="18" readPermission="false" scale="15" t="Mailing Longitude" type="_double"/>
+    <sfField editPermission="false" length="40" n="MailingGeocodeAccuracy" readPermission="false" restrictedPicklist="true" standardPickListName="GeocodeAccuracy" t="Mailing Geocode Accuracy" type="picklist">
+      <picklistEntryIds>6,7,8,9,10,11,12,13,14,15,16</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="6" n="Address" s=""/>
+        <sfPLE id="7" n="NearAddress" s=""/>
+        <sfPLE id="8" n="Block" s=""/>
+        <sfPLE id="9" n="Street" s=""/>
+        <sfPLE id="10" n="ExtendedZip" s=""/>
+        <sfPLE id="11" n="Zip" s=""/>
+        <sfPLE id="12" n="Neighborhood" s=""/>
+        <sfPLE id="13" n="City" s=""/>
+        <sfPLE id="14" n="County" s=""/>
+        <sfPLE id="15" n="State" s=""/>
+        <sfPLE id="16" n="Unknown" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" n="MailingAddress" t="Mailing Address" type="address" updateable="false"/>
+    <sfField length="40" n="Phone" t="Business Phone" type="phone"/>
+    <sfField length="40" n="Fax" t="Business Fax" type="phone"/>
+    <sfField length="40" n="MobilePhone" t="Mobile Phone" type="phone"/>
+    <sfField length="40" n="HomePhone" t="Home Phone" type="phone"/>
+    <sfField length="40" n="OtherPhone" t="Other Phone" type="phone"/>
+    <sfField length="40" n="AssistantPhone" t="Asst. Phone" type="phone"/>
+    <sfField length="18" n="ReportsToId" relationshipName="ReportsTo" t="Reports To ID" type="reference">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="80" n="Email" type="email"/>
+    <sfField length="128" n="Title"/>
+    <sfField length="80" n="Department"/>
+    <sfField length="40" n="AssistantName" t="Assistant's Name"/>
+    <sfField length="40" n="LeadSource" standardPickListName="LeadSource" t="Lead Source" type="picklist">
+      <picklistEntryIds>17,18,19,20,21</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="17" n="Web" s=""/>
+        <sfPLE id="18" n="Phone Inquiry" s=""/>
+        <sfPLE id="19" n="Partner Referral" s=""/>
+        <sfPLE id="20" n="Purchased List" s=""/>
+        <sfPLE id="21" n="Other" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField n="Birthdate" type="date"/>
+    <sfField extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" t="Contact Description" type="textarea"/>
+    <sfField length="18" n="OwnerId" relationshipName="Owner" t="Owner ID" type="reference">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" internal="true" n="HasOptedOutOfEmail" readPermission="false" t="Email Opt Out" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" internal="true" n="HasOptedOutOfFax" readPermission="false" t="Fax Opt Out" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="DoNotCall" readPermission="false" t="Do Not Call" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By ID" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastActivityDate" t="Last Activity" type="date" updateable="false"/>
+    <sfField createable="false" n="LastCURequestDate" t="Last Stay-in-Touch Request Date" type="datetime" updateable="false"/>
+    <sfField createable="false" n="LastCUUpdateDate" t="Last Stay-in-Touch Save Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" internal="true" length="255" n="AccountName" readPermission="false" t="Account Name" updateable="false"/>
+    <sfField createable="false" editPermission="false" internal="true" length="121" n="ReportsToName" readPermission="false" t="Reports To Name" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastViewedDate" t="Last Viewed Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="LastReferencedDate" t="Last Referenced Date" type="datetime" updateable="false"/>
+    <sfField length="255" n="EmailBouncedReason" t="Email Bounced Reason"/>
+    <sfField n="EmailBouncedDate" t="Email Bounced Date" type="datetime"/>
+    <sfField createable="false" editPermission="false" n="IsEmailBounced" t="Is Email Bounced" type="_boolean" updateable="false"/>
+    <sfField createable="false" extraTypeInfo="imageurl" length="255" n="PhotoUrl" t="Photo URL" type="url" updateable="false"/>
+    <sfField length="20" n="Jigsaw" t="Data.com Key"/>
+    <sfField createable="false" editPermission="false" length="20" n="JigsawContactId" readPermission="false" relationshipName="JigsawContact" t="Jigsaw Contact ID" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="40" n="CleanStatus" standardPickListName="Contact.CleanStatus" t="Clean Status" type="picklist" updateable="false">
+      <picklistEntryIds/>
+      <picklistEntries/>
+    </sfField>
+    <sfField length="255" n="Level__c" t="Level" type="picklist">
+      <picklistEntryIds>22,23,24</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="22" n="Secondary" s=""/>
+        <sfPLE id="23" n="Tertiary" s=""/>
+        <sfPLE id="24" n="Primary" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField length="100" n="Languages__c" t="Languages"/>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="Contract" field="CustomerSignedId" n="ContractsSigned" relationshipName="ContractsSigned" s="2-" t="Contract"/>
+    <sfObjectRelationship alias="RelatedContractContactRoleList" childName="ContractContactRole" field="ContactId" n="ContractContactRoles" relationshipName="ContractContactRoles" s="2-" t="ContractContactRole"/>
+    <sfObjectRelationship childName="EntityHistory" field="ParentId" n="EntityHistories" relationshipName="EntityHistories" s="2-" t="EntityHistory"/>
+    <sfObjectRelationship alias="RelatedEmailStatusList" childName="EmailStatus" field="WhoId" n="EmailStatuses" relationshipName="EmailStatuses" s="2-" t="EmailStatus"/>
+    <sfObjectRelationship alias="RelatedCampaignList" childName="CampaignMember" field="ContactId" n="CampaignMembers" relationshipName="CampaignMembers" s="2-" t="CampaignMember"/>
+    <sfObjectRelationship alias="RelatedOpportunityList" childName="Opportunity" field="ContactId" n="Opportunities" relationshipName="Opportunities" s="2-" t="Opportunity"/>
+    <sfObjectRelationship alias="RelatedContactRoleList" childName="OpportunityContactRole" field="ContactId" n="OpportunityContactRoles" relationshipName="OpportunityContactRoles" s="2-" t="OpportunityContactRole"/>
+    <sfObjectRelationship alias="RelatedActivityAttachmentList" childName="Attachment" field="ParentId" n="Attachments" relationshipName="Attachments" s="2-" t="Attachment"/>
+    <sfObjectRelationship alias="RelatedAssetList" childName="Asset" field="ContactId" n="Assets" relationshipName="Assets" s="2-" t="Asset"/>
+    <sfObjectRelationship alias="RelatedCaseList" childName="Case" field="ContactId" n="Cases" relationshipName="Cases" s="2-" t="Case"/>
+    <sfObjectRelationship alias="RelatedCaseContactRoleList" childName="CaseContactRole" field="ContactId" n="CaseContactRoles" relationshipName="CaseContactRoles" s="2-" t="CaseContactRole"/>
+    <sfObjectRelationship childName="ContentDocumentLink" field="LinkedEntityId" n="ContentDocumentLinks" relationshipName="ContentDocumentLinks" s="2-" t="ContentDocumentLink"/>
+    <sfObjectRelationship alias="RelatedFileList" childName="AttachedContentDocument" field="LinkedEntityId" n="AttachedContentDocuments" relationshipName="AttachedContentDocuments" s="2-" t="AttachedContentDocument"/>
+    <sfObjectRelationship alias="RelatedNoteList" childName="CombinedAttachment" field="ParentId" n="CombinedAttachments" relationshipName="CombinedAttachments" s="2-" t="CombinedAttachment"/>
+    <sfObjectRelationship childName="Note" field="ParentId" n="Notes" relationshipName="Notes" s="2-" t="Note"/>
+    <sfObjectRelationship childName="NoteAndAttachment" field="ParentId" n="NotesAndAttachments" relationshipName="NotesAndAttachments" s="2-" t="NoteAndAttachment"/>
+    <sfObjectRelationship childName="EntitySubscription" field="ParentId" n="FeedSubscriptionsForEntity" relationshipName="FeedSubscriptionsForEntity" s="2-" t="EntitySubscription"/>
+    <sfObjectRelationship alias="RelatedProcessInstanceHistory" childName="ProcessInstance" field="TargetObjectId" n="ProcessInstances" relationshipName="ProcessInstances" s="2-" t="ProcessInstance"/>
+    <sfObjectRelationship alias="RelatedProcessHistoryList" childName="ProcessInstanceHistory" field="TargetObjectId" n="ProcessSteps" relationshipName="ProcessSteps" s="2-" t="ProcessInstanceHistory"/>
+    <sfObjectRelationship childName="Task" field="WhoId" n="Tasks" relationshipName="Tasks" s="2-" t="Task"/>
+    <sfObjectRelationship childName="Event" field="WhoId" n="Events" relationshipName="Events" s="2-" t="Event"/>
+    <sfObjectRelationship childName="TaskRelation" field="RelationId" n="TaskRelations" relationshipName="TaskRelations" s="2-" t="TaskRelation"/>
+    <sfObjectRelationship childName="EventRelation" field="RelationId" n="EventRelations" relationshipName="EventRelations" s="2-" t="EventRelation"/>
+    <sfObjectRelationship childName="TaskWhoRelation" field="RelationId" n="TaskWhoRelations" relationshipName="TaskWhoRelations" s="2-" t="TaskWhoRelation"/>
+    <sfObjectRelationship childName="EventWhoRelation" field="RelationId" n="EventWhoRelations" relationshipName="EventWhoRelations" s="2-" t="EventWhoRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeAccept" childName="AcceptedEventRelation" field="RelationId" n="AcceptedEventRelations" relationshipName="AcceptedEventRelations" s="2-" t="AcceptedEventRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeNotDecided" childName="UndecidedEventRelation" field="RelationId" n="UndecidedEventRelations" relationshipName="UndecidedEventRelations" s="2-" t="UndecidedEventRelation"/>
+    <sfObjectRelationship alias="RelatedEventAttendeeDecline" childName="DeclinedEventRelation" field="RelationId" n="DeclinedEventRelations" relationshipName="DeclinedEventRelations" s="2-" t="DeclinedEventRelation"/>
+    <sfObjectRelationship alias="RelatedActivityList" childName="OpenActivity" field="WhoId" n="OpenActivities" relationshipName="OpenActivities" s="2-" t="OpenActivity"/>
+    <sfObjectRelationship alias="RelatedHistoryList" childName="ActivityHistory" field="WhoId" n="ActivityHistories" relationshipName="ActivityHistories" s="2-" t="ActivityHistory"/>
+    <sfObjectRelationship childName="TopicAssignment" field="EntityId" n="TopicAssignments" relationshipName="TopicAssignments" s="2-" t="TopicAssignment"/>
+    <sfObjectRelationship childName="User" field="ContactId" n="Users" relationshipName="Users" s="2-" t="User"/>
+    <sfObjectRelationship childName="CombinedNote" field="ParentId" n="CombinedNotes" relationshipName="CombinedNotes" s="2-" t="CombinedNote"/>
+    <sfObjectRelationship childName="EmailMessageRelation" field="RelationId" n="EmailMessageRelations" relationshipName="EmailMessageRelations" s="2-" t="EmailMessageRelation"/>
+    <sfObjectRelationship childName="CleanInfo" field="TargetEntityId" n="CleanInfos" relationshipName="CleanInfos" s="2-" t="CleanInfo"/>
+    <sfObjectRelationship alias="RelatedAccountContactRoleList" childName="AccountContactRole" field="ContactId" n="AccountContactRoles" relationshipName="AccountContactRoles" s="2-" t="AccountContactRole"/>
+    <sfObjectRelationship alias="RelatedGroupsListOnRecord" childName="CollaborationGroupRecord" field="RecordId" n="RecordAssociatedGroups" relationshipName="RecordAssociatedGroups" s="2-" t="CollaborationGroupRecord"/>
+    <sfObjectRelationship childName="ContactCleanInfo" field="ContactId" n="ContactCleanInfos" relationshipName="ContactCleanInfos" s="2-" t="ContactCleanInfo"/>
+    <sfObjectRelationship childName="CleanContactBackup" field="ContactId" n="DataDotComCleanContactBackups" relationshipName="DataDotComCleanContactBackups" s="2-" t="CleanContactBackup"/>
+    <sfObjectRelationship childName="CleanEntityErrorLog" field="CleanEntityId" n="CleanEntityErrorLogs" relationshipName="CleanEntityErrorLogs" s="2-" t="CleanEntityErrorLog"/>
+    <sfObjectRelationship childName="SocialPersona" field="ParentId" n="Personas" relationshipName="Personas" s="2-" t="SocialPersona"/>
+    <sfObjectRelationship childName="SocialPost" field="WhoId" n="Posts" relationshipName="Posts" s="2-" t="SocialPost"/>
+    <sfObjectRelationship childName="WorkFeedbackRequest" field="RelatedObjectId" n="RelatedObjects" relationshipName="RelatedObjects" s="2-" t="WorkFeedbackRequest"/>
+    <sfObjectRelationship childName="DuplicateErrorLog" field="RecordId" n="DuplicateErrorLogs" relationshipName="DuplicateErrorLogs" s="2-" t="DuplicateErrorLog"/>
+    <sfObjectRelationship childName="DuplicateRecordItem" field="RecordId" n="DuplicateRecordItems" relationshipName="DuplicateRecordItems" s="2-" t="DuplicateRecordItem"/>
+    <sfObjectRelationship childName="OutgoingEmailRelation" field="RelationId" n="OutgoingEmailRelations" relationshipName="OutgoingEmailRelations" s="2-" t="OutgoingEmailRelation"/>
+    <sfObjectRelationship childName="CleanEntityError" field="CleanEntityId" n="CleanEntityErrors" relationshipName="CleanEntityErrors" s="2-" t="CleanEntityError"/>
+    <sfObjectRelationship childName="ListEmailSentResult" field="RecipientId" n="ListEmailRecipients" relationshipName="ListEmailRecipients" s="2-" t="ListEmailSentResult"/>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="ContactRequest" field="WhoId" n="ContactRequests" relationshipName="ContactRequests" s="2-" t="ContactRequest"/>
+    <sfObjectRelationship childName="ListEmailIndividualRecipient" field="RecipientId" n="ListEmailIndividualRecipients" relationshipName="ListEmailIndividualRecipients" s="2-" t="ListEmailIndividualRecipient"/>
+    <sfObjectRelationship childName="UserEmailPreferredPerson" field="PersonRecordId" n="PersonRecord" relationshipName="PersonRecord" s="2-" t="UserEmailPreferredPerson"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+    <sfObjectRelationship alias="RelatedEntityHistoryList" childName="ContactHistory" field="ContactId" n="Histories" relationshipName="Histories" s="2-" t="ContactHistory"/>
+    <sfObjectRelationship childName="ContactFeed" field="ParentId" n="Feeds" relationshipName="Feeds" s="2-" t="ContactFeed"/>
+    <sfObjectRelationship childName="ContactShare" field="ContactId" n="Shares" relationshipName="Shares" s="2-" t="ContactShare"/>
+    <sfObjectRelationship alias="RelatedOpportunityList" childName="Opportunity" field="ContactId" n="Opportunities" relationshipName="Opportunities" s="2-" t="Opportunity"/>
+    <sfObjectRelationship alias="RelatedContentDistributionList" childName="ContentDistribution" field="RelatedRecordId" n="RelatedContentDistributionList" relationshipName="RelatedContentDistributionList" s="2-" t="Content Deliveries"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType n="&lt;default&gt;" t="Web Record Type Mapping">
+      <children>
+        <sfLayout layoutFileName="Contact-Contact Layout" n="Primary" profileLayout="false" s="" t="Page Layout">
+          <layoutTypes>
+            <sfLayoutType layoutType="Edit" n="Edit" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Contact Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Contact Owner" n="Contact Owner" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Business Phone" n="Business Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Phone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Contact Name" n="Contact Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Home Phone" n="Home Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="HomePhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Account" n="Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AccountId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Mobile Phone" n="Mobile Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="MobilePhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Title" n="Title" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Title" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Other Phone" n="Other Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OtherPhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Department" n="Department" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Department" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Business Fax" n="Business Fax" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Fax" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Birthdate" n="Birthdate" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Birthdate" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Email" n="Email" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Email" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Reports To" n="Reports To" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="ReportsToId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Assistant's Name" n="Assistant's Name" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AssistantName" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Lead Source" n="Lead Source" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LeadSource" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Asst. Phone" n="Asst. Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AssistantPhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Address Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Mailing Address" n="Mailing Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="MailingAddress" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Other Address" n="Other Address" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OtherAddress" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Additional Information" s="" seqNum="2" style="TwoColumnsLeftToRight" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Languages" n="Languages" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Languages__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Level" n="Level" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Level__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" n="Description Information" s="" seqNum="4" style="OneColumn" t="Web Layout Section - true">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Contact Description" n="Contact Description" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Description" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+            <sfLayoutType layoutType="Detail" n="Detail" s="2-" t="Web Layout Type">
+              <children>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Contact Information" s="" seqNum="0" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Contact Owner" n="Contact Owner" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OwnerId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Business Phone" n="Business Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Phone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="1">
+                      <children>
+                        <sfLI label="Contact Name" n="Contact Name" required="true" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Name" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Home Phone" n="Home Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="HomePhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="2">
+                      <children>
+                        <sfLI label="Account" n="Account" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AccountId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Mobile Phone" n="Mobile Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="MobilePhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="3">
+                      <children>
+                        <sfLI label="Title" n="Title" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Title" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Other Phone" n="Other Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OtherPhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="4">
+                      <children>
+                        <sfLI label="Department" n="Department" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Department" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Business Fax" n="Business Fax" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Fax" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="5">
+                      <children>
+                        <sfLI label="Birthdate" n="Birthdate" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Birthdate" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Email" n="Email" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Email" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="6">
+                      <children>
+                        <sfLI label="Reports To" n="Reports To" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="ReportsToId" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Assistant's Name" n="Assistant's Name" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AssistantName" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="7">
+                      <children>
+                        <sfLI label="Lead Source" n="Lead Source" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LeadSource" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Asst. Phone" n="Asst. Phone" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="AssistantPhone" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Address Information" s="" seqNum="1" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Mailing Address" n="Mailing Address" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="MailingAddress" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Other Address" n="Other Address" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="OtherAddress" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Additional Information" s="" seqNum="2" style="TwoColumnsLeftToRight" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Languages" n="Languages" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Languages__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI label="Level" n="Level" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Level__c" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="System Information" s="" seqNum="3" style="TwoColumnsTopToBottom" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Created By" n="Created By" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="CreatedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                        <sfLI editableForNew="false" editableForUpdate="false" label="Last Modified By" n="Last Modified By" s="" seqNum="1" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="LastModifiedById" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+                <sfLayoutSection customLabel="false" detailHeading="false" editHeading="false" n="Description Information" s="" seqNum="4" style="OneColumn" t="Web Layout Section - false">
+                  <children>
+                    <sfLayoutRow n="LayoutRow" s="" seqNum="0">
+                      <children>
+                        <sfLI label="Contact Description" n="Contact Description" s="" seqNum="0" t="Web Layout Item">
+                          <children>
+                            <sfLIC n="Description" s="" seqNum="0" t="Web Layout Field" type="Field"/>
+                          </children>
+                        </sfLI>
+                      </children>
+                    </sfLayoutRow>
+                  </children>
+                </sfLayoutSection>
+              </children>
+            </sfLayoutType>
+          </layoutTypes>
+          <relatedLists>
+            <sfRelatedList fieldName="ContactId" label="Opportunities" n="Opportunities" nameAlias="RelatedOpportunityList" relationshipName="Opportunities" s="3-" t="Opportunities (ContactId)">
+              <children>
+                <sfRelatedListColumn alias="Name" n="OPPORTUNITY.NAME" s="" seq="0" t="Opportunity Name"/>
+                <sfRelatedListColumn alias="toLabel(StageName)" n="OPPORTUNITY.STAGE_NAME" s="" seq="1" t="Stage"/>
+                <sfRelatedListColumn alias="Amount" n="OPPORTUNITY.AMOUNT" s="" seq="2" t="Amount"/>
+                <sfRelatedListColumn alias="CloseDate" n="OPPORTUNITY.CLOSE_DATE" s="" seq="3" t="Close Date"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="ContactId" label="Cases" n="Cases" nameAlias="RelatedCaseList" relationshipName="Cases" s="3-" t="Cases (ContactId)">
+              <children>
+                <sfRelatedListColumn alias="CaseNumber" n="CASES.CASE_NUMBER" s="" seq="0" t="Case"/>
+                <sfRelatedListColumn alias="Subject" n="CASES.SUBJECT" s="" seq="1" t="Subject"/>
+                <sfRelatedListColumn alias="toLabel(Priority)" n="CASES.PRIORITY" s="" seq="2" t="Priority"/>
+                <sfRelatedListColumn alias="CreatedDate" n="CASES.CREATED_DATE" s="" seq="3" t="Date/Time Opened"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="CASES.STATUS" s="" seq="4" t="Status"/>
+                <sfRelatedListColumn alias="OwnerId" n="OWNER_NAME" s="" seq="5" t="Owner"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhoId" label="Open Activities" n="OpenActivities" nameAlias="RelatedActivityList" relationshipName="OpenActivities" s="3-" t="Open Activities (WhoId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="WhatId" n="TASK.WHAT_NAME" s="" seq="1" t="Related To"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="TASK.STATUS" s="" seq="4" t="Status"/>
+                <sfRelatedListColumn alias="toLabel(Priority)" n="TASK.PRIORITY" s="" seq="5" t="Priority"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="6" t="Assigned To"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhoId" label="Activity History" n="ActivityHistories" nameAlias="RelatedHistoryList" relationshipName="ActivityHistories" s="3-" t="Activity History (WhoId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="TASK.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="OpenActivity.WhatId" n="TASK.WHAT_NAME" s="" seq="1" t="Related To"/>
+                <sfRelatedListColumn alias="IsTask" n="ACTIVITY.TASK" s="" seq="2" t="Task"/>
+                <sfRelatedListColumn alias="ActivityDate" n="TASK.DUE_DATE" s="" seq="3" t="Due Date"/>
+                <sfRelatedListColumn alias="OwnerId" n="OwnerId" s="" seq="4" t="Assigned To"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="TASK.LAST_UPDATE" s="" seq="5" t="Last Modified Date/Time"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="ContactId" label="Campaign History" n="CampaignMembers" nameAlias="RelatedCampaignList" relationshipName="CampaignMembers" s="3-" t="Campaign Members (ContactId)">
+              <children>
+                <sfRelatedListColumn alias="Campaign.Name" n="CAMPAIGN.NAME" s="" seq="0" t="Campaign Name"/>
+                <sfRelatedListColumn alias="Campaign.StartDate" n="CAMPAIGN.START_DATE" s="" seq="1" t="Start Date"/>
+                <sfRelatedListColumn alias="Campaign.Type" n="CAMPAIGN.CAMPAIGN_TYPE" s="" seq="2" t="Type"/>
+                <sfRelatedListColumn alias="toLabel(Status)" n="CM.STATUS" s="" seq="3" t="Status"/>
+                <sfRelatedListColumn alias="HasResponded" n="CM.RESPONDED" s="" seq="4" t="Responded"/>
+                <sfRelatedListColumn alias="LastModifiedDate" n="CM.LAST_UPDATE" s="" seq="5" t="Member Status Updated"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+            <sfRelatedList fieldName="ParentId" label="Notes &amp; Attachments" n="CombinedAttachments" nameAlias="RelatedNoteList" relationshipName="CombinedAttachments" s="3-" t="Notes &amp; Attachments (ParentId)">
+              <children>
+                <sfRelatedListColumn n="RecordType" s="" seq="0" t="Type"/>
+                <sfRelatedListColumn n="Title" s="" seq="1"/>
+                <sfRelatedListColumn n="RelatedTo" s="" seq="2" t="Related To"/>
+                <sfRelatedListColumn n="LastModifiedDate" s="" seq="3" t="Last Modified"/>
+                <sfRelatedListColumn alias="CreatedBy.Name" n="CreatedById" s="" seq="4" t="Created By"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+              <lightningColumns>
+                <sfRelatedListColumn n="Title" s="" seq="0"/>
+                <sfRelatedListColumn n="CreatedById" s="" seq="1" t="Owner"/>
+                <sfRelatedListColumn n="LastModifiedDate" s="" seq="2" t="Last Modified"/>
+                <sfRelatedListColumn n="ContentSize" s="" seq="3" t="Content Size"/>
+                <sfRelatedListColumn n="FileExtension" s="" seq="4" t="Extension"/>
+              </lightningColumns>
+            </sfRelatedList>
+            <sfRelatedList fieldName="WhoId" label="Email Status" n="EmailStatuses" nameAlias="RelatedEmailStatusList" relationshipName="EmailStatuses" s="3-" t="Email Status (WhoId)">
+              <children>
+                <sfRelatedListColumn alias="Subject" n="ACTIVITY.SUBJECT" s="" seq="0" t="Subject"/>
+                <sfRelatedListColumn alias="CreatedDate" n="EMAIL_STATUS.CREATED_DATE" s="" seq="1" t="Date Sent"/>
+                <sfRelatedListColumn alias="FirstOpenDate" n="EMAIL_STATUS.FIRST_OPEN_DATE" s="" seq="2" t="Date Opened"/>
+                <sfRelatedListColumn alias="TimesOpened" n="EMAIL_STATUS.TIMES_OPENED" s="" seq="3" t="# Times Opened"/>
+                <sfRelatedListColumn alias="LastOpenDate" n="EMAIL_STATUS.LAST_OPEN_DATE" s="" seq="4" t="Last Opened"/>
+              </children>
+              <customActions/>
+              <excludeButtons/>
+              <customButtons/>
+            </sfRelatedList>
+          </relatedLists>
+          <actionLinks/>
+          <excludeButtons>
+            <string>RequestUseSfdc</string>
+            <string>Submit</string>
+          </excludeButtons>
+          <customTags/>
+          <quickActionNames>
+            <string>FeedItem.TextPost</string>
+            <string>FeedItem.ContentPost</string>
+            <string>NewTask</string>
+            <string>LogACall</string>
+            <string>NewCase</string>
+            <string>NewNote</string>
+            <string>NewEvent</string>
+            <string>FeedItem.LinkPost</string>
+            <string>FeedItem.PollPost</string>
+            <string>FeedItem.QuestionPost</string>
+            <string>SendEmail</string>
+          </quickActionNames>
+          <consoleComponents/>
+          <platformActionNames>
+            <string>FeedItem.TextPost</string>
+            <string>FeedItem.ContentPost</string>
+            <string>NewTask</string>
+            <string>LogACall</string>
+            <string>NewCase</string>
+            <string>NewNote</string>
+            <string>NewEvent</string>
+            <string>FeedItem.LinkPost</string>
+            <string>FeedItem.PollPost</string>
+            <string>FeedItem.QuestionPost</string>
+            <string>SendEmail</string>
+          </platformActionNames>
+          <miniLayout>
+            <fields>
+              <string>Name</string>
+              <string>AccountId</string>
+            </fields>
+          </miniLayout>
+        </sfLayout>
+      </children>
+    </sfRecordType>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink modes="ObjectHome Contacts detail List" n="New"/>
+    <sfActionLink modes="View Contacts" n="Edit" requiresRow="true"/>
+    <sfActionLink lightningLabel="Delete" modes="View Contacts" n="Delete" requiresRow="true" t="Del"/>
+    <sfActionLink massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View Contacts" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View Contacts" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink n="Tab" s="" t="Contacts Tab"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink n="AddToCampaign" s="" t="Add to Campaign"/>
+    <sfActionLink lightningAction="true" modes="Contacts" n="AddCampaign" requiresRow="true" t="Add to Campaign"/>
+    <sfActionLink massAction="true" modes="Contacts List" n="NewContact" newAction="true" t="New Contact"/>
+    <sfActionLink n="ListClean" s=""/>
+    <sfActionLink modes="View" n="XClean" t="Check Integration Status"/>
+    <sfActionLink n="CreateCallList" s="" t="Add to Call List"/>
+    <sfActionLink n="CreateSurveyInvitation" s="" t="Get Survey Invitation"/>
+    <sfActionLink modes="ObjectHome" n="View" requiresRow="true"/>
+    <sfActionLink n="ContactHierarchy" s="" t="View Contact Hierarchy"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink massAction="true" modes="Contacts" n="Merge" t="Merge Contacts"/>
+    <sfActionLink modes="Contacts List Home" n="MassAddToCampaign" t="Add to Campaign"/>
+    <sfActionLink modes="List Home" n="SendListEmailAction" t="Send List Email"/>
+    <sfActionLink buttonName="mm" modes="detail" n="RequestUpdate" t="Request Update"/>
+    <sfActionLink modes="Detail" n="workWithPortal" t="Manage External User"/>
+    <sfActionLink buttonName="csp" modes="Detail" n="EnableCustomerPortal" parentMenuAction="workWithPortal" t="Enable Customer User"/>
+    <sfActionLink buttonName="csp" modes="Detail" n="EnablePartnerPortalUser" parentMenuAction="workWithPortal" t="Enable Partner User"/>
+    <sfActionLink buttonName="csp" modes="Detail" n="ViewCustomerPortal" parentMenuAction="workWithPortal" t="View Customer User"/>
+    <sfActionLink buttonName="csp" modes="Detail" n="ViewPartnerPortalUser" parentMenuAction="workWithPortal" t="View Partner User"/>
+    <sfActionLink buttonName="dcsp" modes="Detail" n="DisableCustomerPortal" parentMenuAction="workWithPortal" t="Disable Customer User"/>
+    <sfActionLink buttonName="dcsp" modes="Detail" n="DisablePartnerPortalUser" parentMenuAction="workWithPortal" t="Disable Partner User"/>
+    <sfActionLink buttonName="portallogin" modes="Detail" n="LoginToPortalAsUser" parentMenuAction="workWithPortal" t="Log in to Portal as User"/>
+    <sfActionLink buttonName="networklogin" modes="Detail" n="LoginToNetworkAsUser" parentMenuAction="workWithPortal" t="Log in to Community as User"/>
+    <sfActionLink n="CallHighlightAction" s=""/>
+    <sfActionLink n="EmailHighlightAction" s=""/>
+    <sfActionLink n="EnableSelfService" s=""/>
+    <sfActionLink n="SmsHighlightAction" s=""/>
+    <sfActionLink n="ViewSelfService" s=""/>
+  </standardActions>
+  <homeListColumns>
+    <string>FULL_NAME</string>
+    <string>ACCOUNT.NAME</string>
+    <string>CONTACT.PHONE1</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>FULL_NAME</string>
+    <string>ACCOUNT.NAME</string>
+    <string>ACCOUNT.SITE</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>FULL_NAME</string>
+    <string>ACCOUNT.NAME</string>
+    <string>ACCOUNT.SITE</string>
+    <string>CONTACT.PHONE1</string>
+    <string>CONTACT.EMAIL</string>
+    <string>CORE.USERS.ALIAS</string>
+  </searchResultColumns>
+  <compactLayoutFields>
+    <string>Name</string>
+    <string>Title</string>
+    <string>AccountId</string>
+    <string>Phone</string>
+    <string>Email</string>
+    <string>MobilePhone</string>
+    <string>OwnerId</string>
+  </compactLayoutFields>
+  <listViewActions/>
+</sfObject>

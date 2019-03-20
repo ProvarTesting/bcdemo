@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfOrgMetadataIndex builtAgainstVersion="1.9.7.04" lastStaleCheckUtc="0" orgId="00D4J000000DqXjUAK">
+  <metadataTypes>
+    <entry>
+      <key valueClass="string">QuickAction</key>
+      <value valueClass="list">
+        <sfMetadataFile file="quickActions/FeedItem.NewTaskFromFeedItem.quickAction" fullName="FeedItem.NewTaskFromFeedItem" id="09D4J000000GBhEUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.UpdatePriority_0.quickAction" fullName="Task.UpdatePriority_0" id="09D4J000000GBlRUAW" lastModifiedDate="1551809052000"/>
+        <sfMetadataFile file="quickActions/Case.LogACall.quickAction" fullName="Case.LogACall" id="09D4J000000GBlSUAW" lastModifiedDate="1551809052000"/>
+        <sfMetadataFile file="quickActions/Task.UpdatePriority.quickAction" fullName="Task.UpdatePriority" id="09D4J000000GBh7UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewGroup.quickAction" fullName="NewGroup" id="09D4J000000GBhHUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.UpdateStatus_0.quickAction" fullName="Task.UpdateStatus_0" id="09D4J000000GBlQUAW" lastModifiedDate="1551809052000"/>
+        <sfMetadataFile file="quickActions/NewEvent.quickAction" fullName="NewEvent" id="09D4J000000GBh3UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/CollaborationGroup.NewGroupMember.quickAction" fullName="CollaborationGroup.NewGroupMember" id="09D4J000000GBhIUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.UpdateStatus.quickAction" fullName="Task.UpdateStatus" id="09D4J000000GBh6UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.EditDescription.quickAction" fullName="Task.EditDescription" id="09D4J000000GBh4UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/SendEmail.quickAction" fullName="SendEmail" id="09D4J000000GBhCUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewContact.quickAction" fullName="NewContact" id="09D4J000000GBh8UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/LogACall.quickAction" fullName="LogACall" id="09D4J000000GBh2UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewNote.quickAction" fullName="NewNote" id="09D4J000000GBhDUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewAccount.quickAction" fullName="NewAccount" id="09D4J000000GBhFUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewOpportunity.quickAction" fullName="NewOpportunity" id="09D4J000000GBh9UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewCase.quickAction" fullName="NewCase" id="09D4J000000GBhAUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/CollaborationGroup.NewGroupRecord.quickAction" fullName="CollaborationGroup.NewGroupRecord" id="09D4J000000GBhJUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.Defer.quickAction" fullName="Task.Defer" id="09D4J000000GBh5UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Case.NewChildCase.quickAction" fullName="Case.NewChildCase" id="09D4J000000GBhGUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/NewTask.quickAction" fullName="NewTask" id="09D4J000000GBh1UAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.EditDescription_0.quickAction" fullName="Task.EditDescription_0" id="09D4J000000GBlOUAW" lastModifiedDate="1551809052000"/>
+        <sfMetadataFile file="quickActions/NewLead.quickAction" fullName="NewLead" id="09D4J000000GBhBUAW" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="quickActions/Task.Defer_0.quickAction" fullName="Task.Defer_0" id="09D4J000000GBlPUAW" lastModifiedDate="1551809052000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">FlexiPage</key>
+      <value valueClass="list">
+        <sfMetadataFile file="flexipages/LightningSalesConsole_UtilityBar.flexipage" fullName="LightningSalesConsole_UtilityBar" id="0M04J000000HA70SAG" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="flexipages/LightningService_UtilityBar.flexipage" fullName="LightningService_UtilityBar" id="0M04J000000HA6zSAG" lastModifiedDate="1551809020000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">ListView</key>
+      <value valueClass="list">
+        <sfMetadataFile fullName="Opportunity.ClosingNextMonth" id="00B4J000001kANuUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Scorecard.MyScorecards" id="00B4J000001kAPkUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.MyInApprovalContracts" id="00B4J000001kAO9UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Task.OpenTasks" id="00B4J000001kAPmUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.MyUnreadLeads" id="00B4J000001kANtUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.AllClosedCases" id="00B4J000001kANpUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.NewThisWeek" id="00B4J000001kAO1UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.ClosingThisMonth" id="00B4J000001kANoUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="User.ActiveUsers" id="00B4J000001kAO6UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Task.CompletedTasks" id="00B4J000001kAPqUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Task.DelegatedTasks" id="00B4J000001kAPpUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="CollaborationGroup.All_ChatterGroups" id="00B4J000001kANbUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.NewLastWeek" id="00B4J000001kANqUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.MyOpportunities" id="00B4J000001kAOqUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Idea.Ideas_Last_7_Days" id="00B4J000001kANjUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.AllActivatedContracts" id="00B4J000001kAOAUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Order.AllDraftOrders" id="00B4J000001kAOFUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.TodaysLeads" id="00B4J000001kAO7UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.NewLastWeek" id="00B4J000001kAO5UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.NewThisWeek" id="00B4J000001kANxUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Campaign.MyActiveCampaigns" id="00B4J000001kAO3UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Task.TodaysTasks" id="00B4J000001kAPnUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.AllOpenLeads" id="00B4J000001kANLUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="ContactRequest.My_ContactRequests" id="00B4J000001kANZUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="ConsumptionSchedule.All_ConsumptionSchedules" id="00B4J0000012aQJUAY" lastModifiedDate="1551809047000"/>
+        <sfMetadataFile fullName="Asset.AllAssets" id="00B4J000001kAOyUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.NewThisWeek" id="00B4J000001kANEUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.MyAccounts" id="00B4J000001kAOgUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.MyActivatedContracts" id="00B4J000001kAOEUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.AllOpportunities" id="00B4J000001kANNUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.AllOpenCases" id="00B4J000001kANIUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="ConsumptionSchedule.My_ConsumptionSchedules" id="00B4J0000012aQKUAY" lastModifiedDate="1551809047000"/>
+        <sfMetadataFile fullName="Task.UnscheduledTasks" id="00B4J000001kAPsUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Activity.TodaysTasks" id="00B4J000001kAO4UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.Default_Opportunity_Pipeline" id="00B4J000001kAPSUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="WorkFeedbackRequest.All" id="00B4J000001kAPTUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="WorkFeedbackRequest.AboutTopics" id="00B4J000001kAPZUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Scorecard.AllScorecards" id="00B4J000001kAPjUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.MyDraftContracts" id="00B4J000001kAOBUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Order.AllOrders" id="00B4J000001kANOUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Product2.AllProducts" id="00B4J000001kAOsUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.PlatinumandGoldSLACustomers" id="00B4J000001kAOKUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.BirthdaysThisMonth" id="00B4J000001kANzUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Solution.AllUnreviewedSolutions" id="00B4J000001kAO0UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Solution.AllReviewedSolutions" id="00B4J000001kANRUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="User.AllUsers" id="00B4J000001kANSUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.Private" id="00B4J000001kANyUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.MyCases" id="00B4J000001kAOkUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.AllInApprovalContracts" id="00B4J000001kAODUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.AllAccounts" id="00B4J000001kAOaUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Activity.UpcomingEvents" id="00B4J000001kAO2UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.AllContacts" id="00B4J000001kANJUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.NewLastWeek" id="00B4J000001kANrUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Task.OverdueTasks" id="00B4J000001kAPoUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="SocialPost.AllSocialPosts" id="00B4J000001kANkUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="User.AdminUsers" id="00B4J000001kANsUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.AllDraftContracts" id="00B4J000001kAOCUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="WorkFeedbackTemplate.All" id="00B4J000001kAPNUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.ViewCustom1" id="00B4J000001kAOJUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Task.RecurringTasks" id="00B4J000001kAPrUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.MyContacts" id="00B4J000001kAOoUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="SocialPersona.AllSocialPersonas" id="00B4J0000012aQNUAY" lastModifiedDate="1551809052000"/>
+        <sfMetadataFile fullName="Activity.MyActivities" id="00B4J000001kAOcUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.MyOpenCases" id="00B4J000001kANvUAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Recommendation.All_Recommendations" id="00B4J0000012aQMUAY" lastModifiedDate="1551809050000"/>
+        <sfMetadataFile fullName="Campaign.AllActiveCampaigns" id="00B4J000001kANHUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Order.AllActivatedOrders" id="00B4J000001kAOGUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.Won" id="00B4J000001kAO8UAM" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.ViewCustom2" id="00B4J000001kAOIUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contract.AllContracts" id="00B4J000001kANKUA2" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Activity.AllActivities" id="00B4J000001kAOtUAM" lastModifiedDate="1551809020000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">CustomObject</key>
+      <value valueClass="list">
+        <sfMetadataFile file="objects/Macro.object" fullName="Macro" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/MacroInstruction.object" fullName="MacroInstruction" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Campaign.object" fullName="Campaign" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Activity.object" fullName="Activity" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/OpportunityLineItem.object" fullName="OpportunityLineItem" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/EmailMessage.object" fullName="EmailMessage" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Topic.object" fullName="Topic" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Image.object" fullName="Image" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/CaseContactRole.object" fullName="CaseContactRole" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ExchangeUserMapping.object" fullName="ExchangeUserMapping" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/PartnerRole.object" fullName="PartnerRole" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/LeadCleanInfo.object" fullName="LeadCleanInfo" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/MacroAction.object" fullName="MacroAction" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Account.object" fullName="Account" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/OrgDeleteRequest.object" fullName="OrgDeleteRequest" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/AccountContactRole.object" fullName="AccountContactRole" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ScorecardAssociation.object" fullName="ScorecardAssociation" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/AssetRelationship.object" fullName="AssetRelationship" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Contract.object" fullName="Contract" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Solution.object" fullName="Solution" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/StreamingChannel.object" fullName="StreamingChannel" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Contact.object" fullName="Contact" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Pricebook2.object" fullName="Pricebook2" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Question.object" fullName="Question" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Opportunity.object" fullName="Opportunity" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Idea.object" fullName="Idea" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ScorecardMetric.object" fullName="ScorecardMetric" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/OrderItem.object" fullName="OrderItem" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/SocialPersona.object" fullName="SocialPersona" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ContentVersion.object" fullName="ContentVersion" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Asset.object" fullName="Asset" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ContractContactRole.object" fullName="ContractContactRole" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Site.object" fullName="Site" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ProductConsumptionSchedule.object" fullName="ProductConsumptionSchedule" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Scorecard.object" fullName="Scorecard" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/AccountCleanInfo.object" fullName="AccountCleanInfo" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/TopicAssignment.object" fullName="TopicAssignment" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ForecastingCategoryMapping.object" fullName="ForecastingCategoryMapping" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ContactCleanInfo.object" fullName="ContactCleanInfo" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/SocialPost.object" fullName="SocialPost" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ContactRequest.object" fullName="ContactRequest" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ChatterActivity.object" fullName="ChatterActivity" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/OpportunityContactRole.object" fullName="OpportunityContactRole" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/DandBCompany.object" fullName="DandBCompany" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/User.object" fullName="User" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/DuplicateRecordSet.object" fullName="DuplicateRecordSet" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/OpportunityCompetitor.object" fullName="OpportunityCompetitor" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/DuplicateRecordItem.object" fullName="DuplicateRecordItem" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Case.object" fullName="Case" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/FeedItem.object" fullName="FeedItem" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Task.object" fullName="Task" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/RecordAction.object" fullName="RecordAction" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/CampaignMember.object" fullName="CampaignMember" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/AssistantProgress.object" fullName="AssistantProgress" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Order.object" fullName="Order" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/CollaborationGroupMember.object" fullName="CollaborationGroupMember" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/RequestsForAccessSIQ.object" fullName="RequestsForAccessSIQ" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Event.object" fullName="Event" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Lead.object" fullName="Lead" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ConsumptionRate.object" fullName="ConsumptionRate" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/PricebookEntry.object" fullName="PricebookEntry" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/UserProvisioningRequest.object" fullName="UserProvisioningRequest" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/ConsumptionSchedule.object" fullName="ConsumptionSchedule" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Reply.object" fullName="Reply" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/CollaborationGroup.object" fullName="CollaborationGroup" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/QuickText.object" fullName="QuickText" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Recommendation.object" fullName="Recommendation" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Product2.object" fullName="Product2" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/StreamActivityAccess.object" fullName="StreamActivityAccess" id="" lastModifiedDate="0"/>
+        <sfMetadataFile file="objects/Global.object" fullName="Global"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">RecordType</key>
+      <value valueClass="list">
+        <sfMetadataFile fullName="Metric.Completion" id="0124J0000009xfyQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Metric.Progress" id="0124J0000009xfxQAA" lastModifiedDate="1551809020000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">Layout</key>
+      <value valueClass="list">
+        <sfMetadataFile file="layouts/Case-Case Layout.layout" fullName="Case-Case Layout" id="00h4J0000017h7yQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/CampaignMember-Campaign Member Page Layout.layout" fullName="CampaignMember-Campaign Member Page Layout" id="00h4J0000017h8OQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Asset-Asset Layout.layout" fullName="Asset-Asset Layout" id="00h4J0000017h8tQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Case-Case %28Support%29 Layout.layout" fullName="Case-Case %28Support%29 Layout" id="00h4J0000017h7xQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/ContentVersion-Content Version Layout.layout" fullName="ContentVersion-Content Version Layout" id="00h4J0000017h94QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Pricebook2-Price Book Layout.layout" fullName="Pricebook2-Price Book Layout" id="00h4J0000017h8NQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Opportunity-Opportunity Layout.layout" fullName="Opportunity-Opportunity Layout" id="00h4J0000017h82QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/ScorecardMetric-Scorecard Metric Layout.layout" fullName="ScorecardMetric-Scorecard Metric Layout" id="00h4J0000017h9JQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Account-Account %28Sales%29 Layout.layout" fullName="Account-Account %28Sales%29 Layout" id="00h4J0000017h88QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Contact-Contact %28Sales%29 Layout.layout" fullName="Contact-Contact %28Sales%29 Layout" id="00h4J0000017h84QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/SocialPersona-Social Persona Layout.layout" fullName="SocialPersona-Social Persona Layout" id="00h4J0000017h8lQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/OpportunityLineItem-Opportunity Product Layout.layout" fullName="OpportunityLineItem-Opportunity Product Layout" id="00h4J0000017h8yQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/ConsumptionRate-Consumption Rate Layout.layout" fullName="ConsumptionRate-Consumption Rate Layout" id="00h4J0000017h8JQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Lead-Lead %28Marketing%29 Layout.layout" fullName="Lead-Lead %28Marketing%29 Layout" id="00h4J0000017h8BQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Campaign-Campaign Layout.layout" fullName="Campaign-Campaign Layout" id="00h4J0000017h8HQAQ" lastModifiedDate="1551809048000"/>
+        <sfMetadataFile file="layouts/Case-Case %28Sales%29 Layout.layout" fullName="Case-Case %28Sales%29 Layout" id="00h4J0000017h7wQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Contact-Contact %28Marketing%29 Layout.layout" fullName="Contact-Contact %28Marketing%29 Layout" id="00h4J0000017h83QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Opportunity-Opportunity %28Support%29 Layout.layout" fullName="Opportunity-Opportunity %28Support%29 Layout" id="00h4J0000017h81QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/ConsumptionSchedule-Consumption Schedule Layout.layout" fullName="ConsumptionSchedule-Consumption Schedule Layout" id="00h4J0000017h8IQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Account-Account %28Marketing%29 Layout.layout" fullName="Account-Account %28Marketing%29 Layout" id="00h4J0000017h87QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Contact-Contact %28Support%29 Layout.layout" fullName="Contact-Contact %28Support%29 Layout" id="00h4J0000017h85QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Event-Event Layout.layout" fullName="Event-Event Layout" id="00h4J0000017h8wQAA" lastModifiedDate="1551809051000"/>
+        <sfMetadataFile file="layouts/Idea-Idea Layout.layout" fullName="Idea-Idea Layout" id="00h4J0000017h8xQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Product2-Product Layout.layout" fullName="Product2-Product Layout" id="00h4J0000017h91QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Solution-Solution Layout.layout" fullName="Solution-Solution Layout" id="00h4J0000017h92QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/ScorecardAssociation-Scorecard Association Layout.layout" fullName="ScorecardAssociation-Scorecard Association Layout" id="00h4J0000017h9LQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/ProductConsumptionSchedule-Product Consumption Schedule Layout.layout" fullName="ProductConsumptionSchedule-Product Consumption Schedule Layout" id="00h4J0000017h8KQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/UserProvAccount-User Provisioning Account Layout.layout" fullName="UserProvAccount-User Provisioning Account Layout" id="00h4J000000eC9DQAU" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="layouts/Account-Account Layout.layout" fullName="Account-Account Layout" id="00h4J0000017h8AQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Scorecard-Scorecard Layout.layout" fullName="Scorecard-Scorecard Layout" id="00h4J0000017h9IQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Lead-Lead Layout.layout" fullName="Lead-Lead Layout" id="00h4J0000017h8EQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/EmailMessage-Email Message Layout.layout" fullName="EmailMessage-Email Message Layout" id="00h4J000000eC9AQAU" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="layouts/DandBCompany-D%26B Company Layout.layout" fullName="DandBCompany-D%26B Company Layout" id="00h4J0000017h8WQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/DuplicateRecordSet-Duplicate Record Set Layout.layout" fullName="DuplicateRecordSet-Duplicate Record Set Layout" id="00h4J0000017h8VQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Opportunity-Opportunity %28Marketing%29 Layout.layout" fullName="Opportunity-Opportunity %28Marketing%29 Layout" id="00h4J0000017h7zQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Account-Account %28Support%29 Layout.layout" fullName="Account-Account %28Support%29 Layout" id="00h4J0000017h89QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Task-Task Layout.layout" fullName="Task-Task Layout" id="00h4J0000017h8GQAQ" lastModifiedDate="1551809048000"/>
+        <sfMetadataFile file="layouts/Contact-Contact Layout.layout" fullName="Contact-Contact Layout" id="00h4J0000017h86QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/CommunityMemberLayout-Community Member Layout.layout" fullName="CommunityMemberLayout-Community Member Layout" id="00h4J0000017h9HQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/UserProvisioningLog-User Provisioning Log Layout.layout" fullName="UserProvisioningLog-User Provisioning Log Layout" id="00h4J000000eC9CQAU" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="layouts/Global-Global Layout.layout" fullName="Global-Global Layout" id="00h4J0000017h8FQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Lead-Lead %28Support%29 Layout.layout" fullName="Lead-Lead %28Support%29 Layout" id="00h4J0000017h8DQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/User-User Layout.layout" fullName="User-User Layout" id="00h4J0000017h93QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/AssetRelationship-Asset Relationship Layout.layout" fullName="AssetRelationship-Asset Relationship Layout" id="00h4J000000eC99QAE" lastModifiedDate="1551809048000"/>
+        <sfMetadataFile file="layouts/PricebookEntry-Price Book Entry Layout.layout" fullName="PricebookEntry-Price Book Entry Layout" id="00h4J0000017h8MQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/QuickText-Quick Text Layout.layout" fullName="QuickText-Quick Text Layout" id="00h4J0000017h9KQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Opportunity-Opportunity %28Sales%29 Layout.layout" fullName="Opportunity-Opportunity %28Sales%29 Layout" id="00h4J0000017h80QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/OrderItem-Order Product Layout.layout" fullName="OrderItem-Order Product Layout" id="00h4J0000017h90QAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/CaseClose-Close Case Layout.layout" fullName="CaseClose-Close Case Layout" id="00h4J0000017h8uQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Case-Case %28Marketing%29 Layout.layout" fullName="Case-Case %28Marketing%29 Layout" id="00h4J0000017h7vQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/FeedItem-Feed Item Layout.layout" fullName="FeedItem-Feed Item Layout" id="00h4J000000eUSKQA2" lastModifiedDate="1553081435000"/>
+        <sfMetadataFile file="layouts/Order-Order Layout.layout" fullName="Order-Order Layout" id="00h4J0000017h8zQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Contract-Contract Layout.layout" fullName="Contract-Contract Layout" id="00h4J0000017h8vQAA" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/UserProvisioningRequest-User Provisioning Request Layout.layout" fullName="UserProvisioningRequest-User Provisioning Request Layout" id="00h4J000000eC9BQAU" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="layouts/Macro-Macro Layout.layout" fullName="Macro-Macro Layout" id="00h4J0000017h8LQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/Lead-Lead %28Sales%29 Layout.layout" fullName="Lead-Lead %28Sales%29 Layout" id="00h4J0000017h8CQAQ" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile file="layouts/SocialPost-Social Post Layout.layout" fullName="SocialPost-Social Post Layout" id="00h4J0000017h8mQAA" lastModifiedDate="1551809020000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">CustomField</key>
+      <value valueClass="list">
+        <sfMetadataFile fullName="Lead.SICCode__c" id="00N4J000003jD8nUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Goal.OrigGoalId__c" id="00N4J000003jD8tUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.MainCompetitors__c" id="00N4J000003jD8qUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.NumberofLocations__c" id="00N4J000003jD8kUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.Primary__c" id="00N4J000003jD8lUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.PotentialLiability__c" id="00N4J000003jD8eUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.SLAExpirationDate__c" id="00N4J000003jD8aUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.DeliveryInstallationStatus__c" id="00N4J000003jD8pUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Metric.OrigMetricId__c" id="00N4J000003jD8uUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.CurrentGenerators__c" id="00N4J000003jD8oUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.CurrentGenerators__c" id="00N4J000003jD8jUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.OrderNumber__c" id="00N4J000003jD8rUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.SLAViolation__c" id="00N4J000003jD8gUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.SLA__c" id="00N4J000003jD8ZUAU" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.CustomerPriority__c" id="00N4J000003jD8XUAU" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.SLASerialNumber__c" id="00N4J000003jD8bUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.NumberofLocations__c" id="00N4J000003jD8YUAU" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.Product__c" id="00N4J000003jD8fUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.Languages__c" id="00N4J000003jD8hUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.Active__c" id="00N4J000003jD8WUAU" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Lead.ProductInterest__c" id="00N4J000003jD8mUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Contact.Level__c" id="00N4J000003jD8iUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Opportunity.TrackingNumber__c" id="00N4J000003jD8sUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Case.EngineeringReqNumber__c" id="00N4J000003jD8dUAE" lastModifiedDate="1551809020000"/>
+        <sfMetadataFile fullName="Account.UpsellOpportunity__c" id="00N4J000003jD8cUAE" lastModifiedDate="1551809020000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">Profile</key>
+      <value valueClass="list">
+        <sfMetadataFile file="profiles/Chatter Moderator User.profile" fullName="Chatter Moderator User" id="00e4J000000xxzeQAA" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/HighVolumePortal.profile" fullName="HighVolumePortal" id="00e4J000000xxzTQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Authenticated Website.profile" fullName="Authenticated Website" id="00e4J000000xxzhQAA" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/External Identity User.profile" fullName="External Identity User" id="00e4J000000xxzZQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Work%2Ecom Only User.profile" fullName="Work%2Ecom Only User" id="00e4J000000xxzOQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Custom%3A Sales Profile.profile" fullName="Custom%3A Sales Profile" id="00e4J000000xxzkQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Standard.profile" fullName="Standard" id="00e4J000000xxzpQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Chatter External User.profile" fullName="Chatter External User" id="00e4J000000xxzfQAA" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/Silver Partner User.profile" fullName="Silver Partner User" id="00e4J000000xxzSQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Customer Portal Manager Standard.profile" fullName="Customer Portal Manager Standard" id="00e4J000000xxzVQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Partner Community Login User.profile" fullName="Partner Community Login User" id="00e4J000000xxzbQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Force%2Ecom - App Subscription User.profile" fullName="Force%2Ecom - App Subscription User" id="00e4J000000xxzWQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Cross Org Data Proxy User.profile" fullName="Cross Org Data Proxy User" id="00e4J000000xxzMQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/MarketingProfile.profile" fullName="MarketingProfile" id="00e4J000000xxznQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/ContractManager.profile" fullName="ContractManager" id="00e4J000000xxzoQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Gold Partner User.profile" fullName="Gold Partner User" id="00e4J000000xxzUQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Customer Portal Manager Custom.profile" fullName="Customer Portal Manager Custom" id="00e4J000000xxzPQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Custom%3A Support Profile.profile" fullName="Custom%3A Support Profile" id="00e4J000000xxzmQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Custom%3A Marketing Profile.profile" fullName="Custom%3A Marketing Profile" id="00e4J000000xxzlQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Analytics Cloud Security User.profile" fullName="Analytics Cloud Security User" id="00e4J000000xxzGQAQ" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/StandardAul.profile" fullName="StandardAul" id="00e4J000000xxzKQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Force%2Ecom - Free User.profile" fullName="Force%2Ecom - Free User" id="00e4J000000xxzdQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Customer Community Plus User.profile" fullName="Customer Community Plus User" id="00e4J000000xxzRQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Identity User.profile" fullName="Identity User" id="00e4J000000xxzQQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/ReadOnly.profile" fullName="ReadOnly" id="00e4J000000xxzjQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Partner Community User.profile" fullName="Partner Community User" id="00e4J000000xxzaQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Admin.profile" fullName="Admin" id="00e4J000000xxzDQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Chatter Free User.profile" fullName="Chatter Free User" id="00e4J000000xxzEQAQ" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/Customer Community Plus Login User.profile" fullName="Customer Community Plus Login User" id="00e4J000000xxzXQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Customer Community User.profile" fullName="Customer Community User" id="00e4J000000xxzcQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/SolutionManager.profile" fullName="SolutionManager" id="00e4J000000xxziQAA" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Customer Community Login User.profile" fullName="Customer Community Login User" id="00e4J000000xxzLQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/PlatformPortal.profile" fullName="PlatformPortal" id="00e4J000000xxzNQAQ" lastModifiedDate="1551809049000"/>
+        <sfMetadataFile file="profiles/Analytics Cloud Integration User.profile" fullName="Analytics Cloud Integration User" id="00e4J000000xxzFQAQ" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/High Volume Customer Portal User.profile" fullName="High Volume Customer Portal User" id="00e4J000000xxzgQAA" lastModifiedDate="1551809056000"/>
+        <sfMetadataFile file="profiles/Partner App Subscription User.profile" fullName="Partner App Subscription User" id="00e4J000000xxzYQAQ" lastModifiedDate="1551809049000"/>
+      </value>
+    </entry>
+    <entry>
+      <key valueClass="string">CustomApplication</key>
+      <value valueClass="list">
+        <sfMetadataFile file="applications/standard__Content.app" fullName="standard__Content" id="02u4J000000FvZaQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__ServiceConsole.app" fullName="standard__ServiceConsole" id="02u4J000000FvZgQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Chatter.app" fullName="standard__Chatter" id="02u4J000000FvZnQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Sites.app" fullName="standard__Sites" id="02u4J000000FvZmQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__LightningInstrumentation.app" fullName="standard__LightningInstrumentation" id="02u4J000000FvZwQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Marketing.app" fullName="standard__Marketing" id="02u4J000000FvZfQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Service.app" fullName="standard__Service" id="02u4J000000FvZeQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Platform.app" fullName="standard__Platform" id="02u4J000000FvZdQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__LightningSales.app" fullName="standard__LightningSales" id="02u4J000000FvZuQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__LightningBolt.app" fullName="standard__LightningBolt" id="02u4J000000PgpAQAS" lastModifiedDate="1551809049000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__AppLauncher.app" fullName="standard__AppLauncher" id="02u4J000000FvZkQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__LightningService.app" fullName="standard__LightningService" id="02u4J000000FvZsQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Community.app" fullName="standard__Community" id="02u4J000000FvZlQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Sales.app" fullName="standard__Sales" id="02u4J000000FvZbQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__Insights.app" fullName="standard__Insights" id="02u4J000000FvZvQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+        <sfMetadataFile file="applications/standard__LightningSalesConsole.app" fullName="standard__LightningSalesConsole" id="02u4J000000FvZtQAK" lastModifiedDate="1551809020000" namespacePrefix="standard"/>
+      </value>
+    </entry>
+  </metadataTypes>
+</sfOrgMetadataIndex>
