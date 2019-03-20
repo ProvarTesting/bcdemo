@@ -7,6 +7,17 @@
   <sourcePath>src</sourcePath>
   <secureStoragePath>.secrets</secureStoragePath>
   <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment name="Dev">
+      <summary/>
+    </environment>
+    <environment name="UAT">
+      <summary/>
+    </environment>
+    <environment name="Production">
+      <summary/>
+    </environment>
+  </environments>
   <variables>
     <testVariable name="_chromeOptions">
       <valueType class="textType">

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase failureBehaviour="Continue" id="7">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: BCAdmin (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">BCAdmin</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">BCAdmin</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="10" title="Create Object: Contact=&gt;ContactId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Contact</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">ContactId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">BCAdmin</value>
+        </argument>
+        <argument id="AccountId">
+          <value class="value" valueClass="string">0014J0000036tXkQAI</value>
+        </argument>
+        <argument id="LastName">
+          <value class="value" valueClass="string">Steintest</value>
+        </argument>
+        <argument id="FirstName">
+          <value class="value" valueClass="string">Abraham</value>
+        </argument>
+        <argument id="Salutation">
+          <value class="value" valueClass="string">Mr.</value>
+        </argument>
+        <argument id="MailingStreet">
+          <value class="value" valueClass="string">525 S. Lexington Ave</value>
+        </argument>
+        <argument id="MailingCity">
+          <value class="value" valueClass="string">Burlington</value>
+        </argument>
+        <argument id="MailingState">
+          <value class="value" valueClass="string">NC</value>
+        </argument>
+        <argument id="MailingPostalCode">
+          <value class="value" valueClass="string">27215</value>
+        </argument>
+        <argument id="MailingCountry">
+          <value class="value" valueClass="string">USA</value>
+        </argument>
+        <argument id="Phone">
+          <value class="value" valueClass="string">(336) 222-7000</value>
+        </argument>
+        <argument id="Fax">
+          <value class="value" valueClass="string">(336) 222-8000</value>
+        </argument>
+        <argument id="Email">
+          <value class="value" valueClass="string">jrogers@burlington.com</value>
+        </argument>
+        <argument id="Title">
+          <value class="value" valueClass="string">VP, Facilities</value>
+        </argument>
+        <argument id="LeadSource">
+          <value class="value" valueClass="string">Web</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">BCAdmin</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Contact</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=AccountId" name="AccountId" title="AccountId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LastName" name="LastName" title="LastName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=FirstName" name="FirstName" title="FirstName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Salutation" name="Salutation" title="Salutation"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=MailingStreet" name="MailingStreet" title="MailingStreet"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=MailingCity" name="MailingCity" title="MailingCity"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=MailingState" name="MailingState" title="MailingState"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=MailingPostalCode" name="MailingPostalCode" title="MailingPostalCode"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=MailingCountry" name="MailingCountry" title="MailingCountry"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Fax" name="Fax" title="Fax"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Email" name="Email" title="Email"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=Title" name="Title" title="Title"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Contact&amp;field=LeadSource" name="LeadSource" title="LeadSource"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

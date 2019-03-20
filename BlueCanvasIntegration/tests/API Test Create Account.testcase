@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase failureBehaviour="Continue" registryId="ab8d4f2a-29d9-4796-b615-ec2e32cbb542" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: BCAdmin (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">BCAdmin</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">BCAdmin</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Account=&gt;AccountId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">AccountId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">BCAdmin</value>
+        </argument>
+        <argument id="Name">
+          <value class="compound">
+            <parts>
+              <value valueClass="string">Burlington Test Data </value>
+              <funcCall id="UniqueId">
+                <argument id="length">
+                  <value class="value" valueClass="decimal">8</value>
+                </argument>
+              </funcCall>
+            </parts>
+          </value>
+        </argument>
+        <argument id="Type">
+          <value class="value" valueClass="string">Customer - Direct</value>
+        </argument>
+        <argument id="BillingStreet">
+          <value class="value" valueClass="string">525 S. Lexington Ave</value>
+        </argument>
+        <argument id="BillingCity">
+          <value class="value" valueClass="string">Burlington</value>
+        </argument>
+        <argument id="BillingState">
+          <value class="value" valueClass="string">NC</value>
+        </argument>
+        <argument id="BillingPostalCode">
+          <value class="value" valueClass="string">27215</value>
+        </argument>
+        <argument id="BillingCountry">
+          <value class="value" valueClass="string">USA</value>
+        </argument>
+        <argument id="Phone">
+          <value class="value" valueClass="string">(336) 222-7000</value>
+        </argument>
+        <argument id="Fax">
+          <value class="value" valueClass="string">(336) 222-8000</value>
+        </argument>
+        <argument id="Website">
+          <value class="value" valueClass="string">www.burlington.com</value>
+        </argument>
+        <argument id="Industry">
+          <value class="value" valueClass="string">Apparel</value>
+        </argument>
+        <argument id="AnnualRevenue">
+          <value class="value" valueClass="decimal">350000000</value>
+        </argument>
+        <argument id="NumberOfEmployees">
+          <value class="value" valueClass="decimal">9000</value>
+        </argument>
+        <argument id="SLA__c">
+          <value class="value" valueClass="string">Silver</value>
+        </argument>
+        <argument id="NumberofLocations__c">
+          <value class="value" valueClass="decimal">6.0</value>
+        </argument>
+        <argument id="UpsellOpportunity__c">
+          <value class="value" valueClass="string">Maybe</value>
+        </argument>
+        <argument id="SLASerialNumber__c">
+          <value class="funcCall" id="UniqueId">
+            <argument id="length">
+              <value class="value" valueClass="decimal">4</value>
+            </argument>
+            <argument id="format">
+              <value class="variable">
+                <path element="NUMERIC"/>
+              </value>
+            </argument>
+          </value>
+        </argument>
+        <argument id="SLAExpirationDate__c">
+          <value class="funcCall" id="DateAdd">
+            <argument id="date">
+              <value class="variable">
+                <path element="TODAY"/>
+              </value>
+            </argument>
+            <argument id="amount">
+              <value class="value" valueClass="decimal">365</value>
+            </argument>
+          </value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">BCAdmin</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Type" name="Type" title="Type"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingStreet" name="BillingStreet" title="BillingStreet"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingCity" name="BillingCity" title="BillingCity"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingState" name="BillingState" title="BillingState"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingPostalCode" name="BillingPostalCode" title="BillingPostalCode"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingCountry" name="BillingCountry" title="BillingCountry"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Fax" name="Fax" title="Fax"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Website" name="Website" title="Website"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Industry" name="Industry" title="Industry"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=AnnualRevenue" name="AnnualRevenue" title="AnnualRevenue"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=NumberOfEmployees" name="NumberOfEmployees" title="NumberOfEmployees"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLA__c" name="SLA__c" title="SLA__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=NumberofLocations__c" name="NumberofLocations__c" title="NumberofLocations__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=UpsellOpportunity__c" name="UpsellOpportunity__c" title="UpsellOpportunity__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLASerialNumber__c" name="SLASerialNumber__c" title="SLASerialNumber__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLAExpirationDate__c" name="SLAExpirationDate__c" title="SLAExpirationDate__c"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>
